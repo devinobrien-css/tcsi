@@ -925,6 +925,14 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-gradient {
   background-image: url(./resources/img/bg-gradient.svg);
 }
@@ -1981,6 +1989,10 @@ video {
 
 .stroke-green-600 {
   stroke: #16a34a;
+}
+
+.stroke-\[\#268fcc\] {
+  stroke: #268fcc;
 }
 
 .stroke-0 {
