@@ -10,7 +10,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Videos from "./pages/Videos.page";
 import Concept from "./pages/Concept.page";
 import Error from "./pages/Error.page";
-import Experiments from "./pages/Experiments.page";
+import Interactives from "./pages/Interactives.page";
 import Origins from "./pages/Origins.page";
 import Applications from "./pages/Applications.page";
 import { TierOne } from "./components/Concept.library/tierOne.component";
@@ -28,9 +28,11 @@ import Publications from "./pages/Publications.page";
 import Donations from "./pages/Donations.page";
 import Research from "./pages/Research.page";
 import Volunteering from "./pages/Volunteering.page";
+import Depthfullness from "./pages/Depthfullness.page";
+import Socioneurological from "./pages/Socioneurological.page";
+import Components from "./pages/Components.page";
 
 const RenderPage = ({children,type}) => {
-
     return (
         <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-gradient bg-cover bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
             <HeaderNav />
@@ -88,6 +90,21 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
+        path: "Depthfullness",
+        element:<RenderPage type="concept"><Depthfullness/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
+        path: "Socio-Neurological",
+        element:<RenderPage type="concept"><Socioneurological/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
+        path: "Components",
+        element:<RenderPage type="concept"><Components/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
         path: "origins",
         element: <RenderPage type="concept"><Origins/></RenderPage>,
         errorElement:<Error />,
@@ -114,8 +131,8 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "experiments",
-        element: <RenderPage type="concept"><Experiments/></RenderPage>,
+        path: "Interactives",
+        element: <RenderPage type="concept"><Interactives/></RenderPage>,
         errorElement:<Error />,
     },
     

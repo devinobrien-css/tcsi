@@ -35,11 +35,11 @@ const SideNavMultiTab = ({title,icon,path,tabs}) => {
                     }
                 }}    
             >   
-                <Icon icon={icon} />
-                <p className={`pr-2 group-hover:scale-110 transform transition-all`}>{title}</p>
+                <Icon icon={icon} width="30"/>
+                <span className="my-auto pl-2 font-teko text-3xl">{title}</span>
                 <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
             </div>
-            <div className={`w-full overflow-hidden transition-all ${open?'h-[300%]':'h-[0%]'}`}>
+            <div className={`w-full overflow-y-hidden  transition-all  ${open?'h-48':'h-0'}`}>
                 {tabs.map((tab,index) => <SideNavTab className={``} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
             </div>
         </div>
@@ -88,8 +88,7 @@ const contributionsMultiTab = [
                     <SideNavTab path="/about" title="about" icon="tabler:info-square" onClick={() => setOpen()}/>
                     <SideNavTab path="/panels" title="panels" icon="carbon:machine-learning-model" onClick={() => setOpen()} />
                     <SideNavTab path="/publications" title="publications" icon="ph:books-duotone" onClick={() => setOpen()}/>
-                    <SideNavMultiTab path="/contributing" title="Contributions" icon="ph:graph-duotone" tabs={contributionsMultiTab} />
-                    <SideNavTab path="/contributing" title="contributing" icon="ph:graph-duotone" onClick={() => setOpen()}/>
+                    <SideNavMultiTab path="/contributing" title="contributing" icon="ph:graph-duotone" tabs={contributionsMultiTab} />
                     <SideNavTab path="/contact" title="contact" icon="tabler:message-circle" onClick={() => setOpen()}/>
                 </nav>
             </div>

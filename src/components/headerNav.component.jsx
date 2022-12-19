@@ -36,7 +36,7 @@ const HeaderNavMultiTab = ({title,tabs}) => {
                 <p className={`pr-2 group-hover:scale-110 transform transition-all`}>{title}</p>
                 <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
             </div>
-            <div className={`bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 w-full overflow-hidden absolute top-full right-0 transition-all ${open?'h-[300%]':'h-[0%]'}`}>
+            <div className={`bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 overflow-hidden absolute whitespace-nowrap w-fit min-w-full left-0 top-full right-0 transition-all ${open?'h-[300%]':'h-[0%]'}`}>
                 {tabs.map((tab,index) => <HeaderNavTab className={``} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
             </div>
         </div>
@@ -59,6 +59,21 @@ const experimentsMultiTab = [
     }
 ]
 
+const exploreMultiTab = [
+    {
+        title:"Depthfullness",
+        path:"/depthfullness"
+    },
+    {
+        title:"Socio-Neurological",
+        path:"/socio-neurological"
+    },
+    {
+        title:"Copmonents",
+        path:"/components"
+    }
+]
+
 /** Main navigation bar
  * @returns a nav bar on the top of the page
  */
@@ -72,6 +87,7 @@ const HeaderNav = () => {
                     <HeaderNavTab path="/" title="home" />
                     <HeaderNavTab path="/origins" title="origins" />
                     <HeaderNavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} />
+                    <HeaderNavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab} />
                     <HeaderNavTab path="/applications" title="applications" />
                     <HeaderNavTab path="/videos" title="videos" />
                     <HeaderNavTab path="/experiments" title="experiments" />

@@ -24,18 +24,6 @@ const Concept = () => {
                     <CurrentSVG />
                 </div>
                 <div className=" px-2 mt-8 w-5/12">
-                    <SectionHeader>
-                        Socio-Neurological Depthfullness
-                    </SectionHeader>
-                    <TextSection>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing 
-                        elit. Voluptate nulla asperiores facilis ipsa possimus,
-                        voluptates illum error sunt libero odio eligendi totam 
-                        necessitatibus voluptates illum error sunt libero odio 
-                        eligendi totam necessitatibus voluptates illum error 
-                        sunt libero odio eligendi totam necessitatibus iste ad 
-                        reiciendis quo veniam ratione vero.
-                    </TextSection>
                     <div className="mt-8">
                         <div className="border-b-2 border-gray-300">
                             <TierButton tab={tab} tier="tier1">

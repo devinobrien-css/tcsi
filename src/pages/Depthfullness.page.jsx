@@ -1,14 +1,12 @@
 import { SectionHeader, TextSection } from "../components/custom.library"
 
-/** Experiments page
- * @returns 
- */
-const Experiments = () => {
+
+const Depthfullness = () => {
     return (
         <div>
             <div className="w-5/12 mx-auto">
                 <SectionHeader>
-                    Experiments
+                    Depthfullness
                 </SectionHeader>
                 <TextSection  >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -22,4 +20,4 @@ const Experiments = () => {
         </div>
     )
 }
-export default Experiments
+export default Depthfullness
