@@ -1,3 +1,12 @@
+export const Section = ({className,children,...rest}) => {
+    return (
+        <div className={`w-10/12 sm:w-8/12 md:w-1/2 mx-auto ${className}`} {...rest}>
+            {children}
+        </div>
+    )
+}
+
+
 /** Standard text section for paragraphs
  * @param {React.Component.jsx} children jsx component or string
  * @param {String} className list of additional classes
@@ -6,7 +15,7 @@
 export const TextSection = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-justify text-sm text-white font-lato ${className}`}
+            className={`text-justify font-acumin ${className}`}
             {...rest}
         >
             {children}
@@ -67,7 +76,23 @@ export const OutlinedHeader = ({children,className,...rest}) => {
  export const SectionHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-white text-4xl mt-4 font-teko ${className}`}
+            className={`text-4xl font-light mt-4 font-acumin ${className}`}
+            {...rest}
+        >
+            {children}
+        </p>
+    )
+}
+
+/** Standard section header
+ * @param {React.Component.jsx} children jsx component or string
+ * @param {String} className list of additional classes
+ * @returns a header component
+ */
+export const SectionSubHeader = ({children,className,...rest}) => {
+    return (
+        <p 
+            className={`text-2xl font-bold mt-4 font-acumin ${className}`}
             {...rest}
         >
             {children}

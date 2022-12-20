@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     screens: {
 			'sm': '640px',
-			'md': '1000px',
-			'lg': '1024px',
-			'xl': '1280px',
+			'md': '1100px',
+			'lg': '1224px',
+			'xl': '1380px',
 			'2xl': '1536px',
 		},
     extend: {
@@ -15,8 +15,10 @@ module.exports = {
         'tcsi-green':'#A4DF53',
         'tcsi-dark-green':'#B0DD68',
         'tcsi-navy':'#390052',
+        'tcsi-lightblue':'#268fcc',
       },
       fontFamily: {
+        'acumin':['acumin-pro','sans-serif'],
         'lato':['Lato','sans-serif'],
         'teko':['Teko', 'sans-serif'],
         'roboto':['Roboto', 'sans-serif']

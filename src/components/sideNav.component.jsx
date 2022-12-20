@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react"
 import { useState } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
-
+import { TCSI } from "../resources/svg/tcsiSVG.component"
 
 const SideNavTab = ({className,path,title,icon,...rest}) => {
     const location = useLocation()
@@ -10,7 +10,7 @@ const SideNavTab = ({className,path,title,icon,...rest}) => {
     return (
         <Link className="h-full group" to={path} {...rest}>
             <div className={`capitalize my-auto p-4 text-3xl group-hover:bg-blue-100 bg-opacity-90 transition-colors border-b-4 flex  ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
-                <Icon icon={icon} className="" />
+                <Icon icon={icon} className="" width="30" />
                 <span className="my-auto pl-2 font-teko">{title}</span>
             </div>
         </Link>
@@ -72,7 +72,11 @@ const contributionsMultiTab = [
         <>
             <div 
                 className={`z-[1000] shadow-xl border h-full bg-tcsi-dark-green fixed left-0 top-0 transition-width duration-800 ${open?"w-1/3":"w-2"}`}
-                // onBlur={()=>setOpen()}
+                onBlur={()=>{
+                    setTimeout(()=>{
+                        setOpen()
+                    },400)
+                }}
                 tabindex="0"
             >
                 <div 
@@ -84,7 +88,7 @@ const contributionsMultiTab = [
                 </div>
 
                 <nav className={`text-gray-800 text-lg overflow-hidden ${open?"w-full":"w-0"}`}>
-                    <p className="text-white h-min my-auto text-3xl p-2">The Center for Sympathetic Intelligence</p>
+                    <TCSI className="p-4" />
                     <SideNavTab path="/about" title="about" icon="tabler:info-square" onClick={() => setOpen()}/>
                     <SideNavTab path="/panels" title="panels" icon="carbon:machine-learning-model" onClick={() => setOpen()} />
                     <SideNavTab path="/publications" title="publications" icon="ph:books-duotone" onClick={() => setOpen()}/>

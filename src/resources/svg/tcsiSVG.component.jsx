@@ -1,8 +1,8 @@
 
 
-export const tcsiSVG = () => {
+export const TCSI = ({className}) => {
     return (
-        <svg viewBox="0 0 492.83 114.6">
+        <svg className={` ${className}`} viewBox="0 0 492.83 114.6">
             <g>
                 <g>
                     <path class="bg-opacity-50 fill-none stroke-[#268fcc] stroke-2" d="M269.31,60.53c-9.12-7.52-14.93-18.91-14.93-31.66,0-10.92,4.26-20.84,11.22-28.19"/>
