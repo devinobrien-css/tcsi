@@ -904,6 +904,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-tcsi-lightblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 143 204 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }

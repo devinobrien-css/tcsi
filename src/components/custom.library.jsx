@@ -111,7 +111,7 @@ export const Note = ({children,className,...rest}) => {
             className={`relative rounded bg-gray-300 bg-opacity-30 my-2 py-2 shadow-xl  ${className}`}
             {...rest}
         >
-            <div className="absolute h-full bg-blue-300 w-3 rounded-xl top-0 "></div>
+            <div className="absolute h-full bg-tcsi-lightblue w-3 rounded-xl top-0 "></div>
             <span className="pl-4 text-gray-700 font-lato">
                 {children}
             </span>
