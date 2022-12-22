@@ -1,11 +1,10 @@
-import { Outlet, useLocation, useOutlet } from "react-router-dom"
-import { Hyperlink, Note, SectionHeader, TextSection } from "../components/custom.library"
+import { Outlet, useOutlet } from "react-router-dom"
+import { Note, SectionHeader, TextSection } from "../components/custom.library"
 
 /**
  * @returns 
  */
 const Contributing = () => {
-    const location = useLocation()
     const outlet = useOutlet()
 
     console.log(outlet)

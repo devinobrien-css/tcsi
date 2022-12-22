@@ -1,4 +1,4 @@
-import { InputMd, Note, SectionHeader, TextAreaMd, TextSection } from "../components/custom.library"
+import { InputMd, SectionHeader, TextAreaMd, TextSection } from "../components/custom.library"
 
 /**
  * @returns 
