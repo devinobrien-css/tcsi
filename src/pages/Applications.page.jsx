@@ -5,7 +5,7 @@ import { Hyperlink, Note, Section, SectionHeader, TextSection } from "../compone
  */
 const Applications = () => {
     return (
-        <Section>
+        <Section className="text-white">
             <SectionHeader>
                 Applications
             </SectionHeader>

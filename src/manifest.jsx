@@ -10,7 +10,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Videos from "./pages/Videos.page";
 import Concept from "./pages/Concept.page";
 import Error from "./pages/Error.page";
-import Interactives from "./pages/Interactives.page";
 import Origins from "./pages/Origins.page";
 import Applications from "./pages/Applications.page";
 import { TierOne } from "./components/Concept.library/tierOne.component";
@@ -31,6 +30,7 @@ import Volunteering from "./pages/Volunteering.page";
 import Depthfullness from "./pages/Depthfullness.page";
 import Socioneurological from "./pages/Socioneurological.page";
 import Components from "./pages/Components.page";
+import Experiments from "./pages/Experiments.page";
 
 const RenderPage = ({children,type}) => {
     return (
@@ -126,13 +126,13 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "Videos",
+        path: "videos",
         element: <RenderPage type="concept"><Videos/></RenderPage>,
         errorElement:<Error />,
     },
     {
-        path: "Interactives",
-        element: <RenderPage type="concept"><Interactives/></RenderPage>,
+        path: "experiments",
+        element: <RenderPage type="concept"><Experiments/></RenderPage>,
         errorElement:<Error />,
     },
     

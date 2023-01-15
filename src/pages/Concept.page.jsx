@@ -22,7 +22,7 @@ const Concept = () => {
                 <div className="w-3/12">
                     <CurrentSVG />
                 </div>
-                <div className=" px-2 mt-8 w-5/12">
+                <div className="text-white px-2 mt-8 w-5/12">
                     <div className="mt-8">
                         <div className="border-b-2 border-gray-300">
                             <TierButton tab={tab} tier="tier1">

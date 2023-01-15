@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react"
 import { useState } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
-import { TCSI } from "../resources/svg/tcsiSVG.component"
+import { TCSI } from "../resources/svg/tcsiSVG.library"
 
 const SideNavTab = ({className,path,title,icon,...rest}) => {
     const location = useLocation()
@@ -9,7 +9,7 @@ const SideNavTab = ({className,path,title,icon,...rest}) => {
 
     return (
         <Link className="h-full group" to={path} {...rest}>
-            <div className={`capitalize my-auto p-4 text-3xl group-hover:bg-blue-100 bg-opacity-90 transition-colors border-b-4 flex  ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
+            <div className={`capitalize my-auto p-4 text-3xl group-hover:bg-blue-100 text-tcsi-blue bg-opacity-90 transition-colors border-b-4 flex  ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
                 <Icon icon={icon} className="" width="30" />
                 <span className="my-auto pl-2 font-teko">{title}</span>
             </div>
@@ -28,7 +28,7 @@ const SideNavMultiTab = ({title,icon,path,tabs}) => {
             onClick={() => {open?setOpen():setOpen(true)}}
         >
             <div 
-                className="flex h-full [&>*]:my-auto group"
+                className="flex h-full [&>*]:my-auto group text-tcsi-blue"
                 onClick={()=>{
                     if(open){
                         navigate(tabs[0].path)

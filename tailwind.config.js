@@ -16,9 +16,9 @@ module.exports = {
         'tcsi-dark-green':'#B0DD68',
         'tcsi-navy':'#390052',
         'tcsi-lightblue':'#268fcc',
+        'tcsi-blue':'#488DC7'
       },
       fontFamily: {
-        'acumin':['acumin-pro','sans-serif'],
         'lato':['Lato','sans-serif'],
         'teko':['Teko', 'sans-serif'],
         'roboto':['Roboto', 'sans-serif']

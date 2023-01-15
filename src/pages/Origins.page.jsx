@@ -16,8 +16,8 @@ const Origins = () => {
                         </div>
                     </div>
                     <div className="md:w-5/12 px-4">
-                        <SectionHeader>Origins</SectionHeader>
-                        <TextSection>
+                        <SectionHeader className="text-white">Origins</SectionHeader>
+                        <TextSection className="text-white">
                             The origins of the concept lie in the experience of 
                             a drummer with an Irish indie rock band who over the 
                             course of several years, while the band went from 

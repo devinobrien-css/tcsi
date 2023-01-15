@@ -8,7 +8,7 @@ const HeaderNavTab = ({className,path,title}) => {
 
     return (
         <Link className="h-full group" to={path}>
-            <div className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:scale-110 transform transition-all border-b-4 ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
+            <div className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:scale-110 font-extralight transform transition-all border-b-4 ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
                 <span>{title}</span>
             </div>
         </Link>
@@ -22,7 +22,7 @@ const HeaderNavMultiTab = ({className,title,tabs}) => {
 
     return (
         <div 
-            className={`h-full min-h-32 capitalize relative px-4 cursor-pointer border-b-4 ${className} ${location.pathname.includes(title)?" border-orange-500":"border-transparent"}`} 
+            className={`z-[500] h-full min-h-32 capitalize relative px-4 cursor-pointer border-b-4 ${className} ${location.pathname.includes(title)?" border-orange-500":"border-transparent"}`} 
             onClick={() => {open?setOpen():setOpen(true)}}
         >
             <div 
@@ -33,7 +33,7 @@ const HeaderNavMultiTab = ({className,title,tabs}) => {
                     }
                 }}    
             >
-                <p className={`pr-2 group-hover:scale-110 transform transition-all`}>{title}</p>
+                <p className={`pr-2 group-hover:scale-110 transform transition-all font-extralight`}>{title}</p>
                 <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
             </div>
             <div className={`z-50 bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 overflow-hidden absolute whitespace-nowrap w-fit min-w-full left-0 top-full right-0 transition-all ${open?'h-48':'h-[0%]'}`}>
@@ -69,7 +69,7 @@ const exploreMultiTab = [
         path:"/socio-neurological"
     },
     {
-        title:"Copmonents",
+        title:"Components",
         path:"/components"
     }
 ]
@@ -82,7 +82,7 @@ const HeaderNav = () => {
     return (
         <>
             <div className="shadow flex w-full justify-between bg-gradient-to-r fixed from-indigo-300 to-green-500">
-                <p className="text-white h-min my-auto text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
+                <p className="text-white font-extralight h-min my-auto text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
 
                 <nav className="flex text-gray-800 text-lg md:opacity-100 opacity-0 w-0 md:w-full justify-end transition-all">
                     <HeaderNavTab path="/" title="home" />

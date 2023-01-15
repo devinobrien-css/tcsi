@@ -1,6 +1,6 @@
 export const Section = ({className,children,...rest}) => {
     return (
-        <div className={`w-10/12 sm:w-8/12 md:w-1/2 mx-auto ${className}`} {...rest}>
+        <div className={`w-10/12 sm:w-8/12 md:w-1/2 mx-auto my-4 ${className}`} {...rest}>
             {children}
         </div>
     )
@@ -15,7 +15,7 @@ export const Section = ({className,children,...rest}) => {
 export const TextSection = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-justify font-acumin ${className}`}
+            className={`text-justify font-roboto ${className}`}
             {...rest}
         >
             {children}
@@ -60,7 +60,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
     return (
         <p 
             style={{WebkitTextFillColor:"transparent",WebkitTextStroke:"1px"}}
-            className={`uppercase font-roboto text-8xl text-gray-300 ${className}`}
+            className={`uppercase font-roboto text-6xl text-gray-300 ${className}`}
             {...rest}
         >
             {children}
@@ -76,7 +76,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
  export const SectionHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-4xl font-light mt-4 font-acumin ${className}`}
+            className={`text-4xl font-light mt-4 font-roboto ${className}`}
             {...rest}
         >
             {children}
@@ -92,7 +92,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
 export const SectionSubHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-2xl font-bold mt-4 font-acumin ${className}`}
+            className={`text-2xl font-bold mt-4 font-roboto ${className}`}
             {...rest}
         >
             {children}

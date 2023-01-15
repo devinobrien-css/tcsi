@@ -1,13 +1,15 @@
 import { Section, SectionHeader, TextSection } from "../components/custom.library"
 
-
-const Socioneurological = () => {
+/** Experiments page
+ * @returns 
+ */
+const Experiments = () => {
     return (
         <Section className="text-white">
             <SectionHeader>
-                Socio-Neurological
+                Experiments
             </SectionHeader>
-            <TextSection>
+            <TextSection  >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Iure dolorem nemo cum consequuntur, incidunt vero odio harum 
                 voluptates qui, totam debitis cupiditate repellat! Obcaecati 
@@ -18,4 +20,4 @@ const Socioneurological = () => {
         </Section>
     )
 }
-export default Socioneurological
+export default Experiments
