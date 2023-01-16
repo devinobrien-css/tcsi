@@ -1,11 +1,23 @@
-import { OutlinedHeader, SectionHeader, TextSection } from "../custom.library"
+import gsap from "gsap"
+import { useEffect } from "react"
+import { OutlinedHeader, SectionHeader, TextSection } from "../../components/custom.library"
 
 
 
 
 export const TierOne = () => {
+
+    useEffect(() => {
+        gsap.fromTo("#tier-section",{
+            opacity:0
+        },{
+            opacity:1,
+            duration:1.5
+        })
+    },[])
+
     return (
-        <div>
+        <div id="tier-section">
             <SectionHeader>Tier 1 - Intrapersonal/Within</SectionHeader>
             
             <TextSection>

@@ -1,12 +1,11 @@
-import { Note, SectionHeader, TextSection } from "../components/custom.library"
+import { Note, Section, SectionHeader, TextSection } from "../components/custom.library"
 
 /**
  * @returns 
  */
 const Publications = () => {
     return (
-        <div>
-            <div className="w-6/12 p-4 mx-auto [&>*]:text-gray-600 shadow bg-white">
+        <Section className="p-4 md:p-12 md:mt-8 shadow bg-white">
                 <SectionHeader>
                     Publications
                 </SectionHeader>
@@ -21,8 +20,7 @@ const Publications = () => {
                 <Note>
                     Here's an example of a note
                 </Note>
-            </div>
-        </div>
+        </Section>
     )
 }
 export default Publications

@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { OutlinedHeader, SectionHeader, TextSection } from "../components/custom.library"
+import { useNavigate } from "react-router-dom"
+import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
 import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
 
@@ -60,6 +61,7 @@ const tierData = {
 }
 
 const Home = () => {
+    const navigate = useNavigate()
     const [tier,setTier] = useState(1)
     const SectionSVG = tierData[`tier${tier}`].svg
 
@@ -86,7 +88,13 @@ const Home = () => {
                             <TextSection className="text-white">
                                 {tierData[`tier${tier}`].content}
                             </TextSection>
-                            <GroupOfPeople />
+                            <GroupOfPeople partition={tier}/>
+                            <RedButton 
+                                className="translate-x-10 -translate-y-20"
+                                onClick={() => {
+                                    navigate(`concept/tier${tier}`)
+                                }}
+                            >Learn More</RedButton>
                         </div>
                     </div>
                 </div>

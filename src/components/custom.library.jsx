@@ -60,7 +60,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
     return (
         <p 
             style={{WebkitTextFillColor:"transparent",WebkitTextStroke:"1px"}}
-            className={`uppercase font-roboto text-6xl text-gray-300 ${className}`}
+            className={`uppercase font-roboto md:text-6xl text-4xl text-gray-300 ${className}`}
             {...rest}
         >
             {children}
@@ -76,7 +76,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
  export const SectionHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-4xl font-light mt-4 font-roboto ${className}`}
+            className={`text-3xl md:text-4xl font-light mt-4 font-roboto ${className}`}
             {...rest}
         >
             {children}
@@ -97,6 +97,14 @@ export const SectionSubHeader = ({children,className,...rest}) => {
         >
             {children}
         </p>
+    )
+}
+
+export const RedButton = ({className,children,...rest}) => {
+    return (
+        <button className={`bg-red-500 text-white p-4 rounded-lg ${className} hover:scale-105 hover:bg-red-400 transition-all transform`} {...rest}>
+            {children}
+        </button>
     )
 }
 
@@ -124,7 +132,7 @@ export const Note = ({children,className,...rest}) => {
  * @param {String} className list of additional classes
  * @returns a link component
  */
- export const Hyperlink = ({to,children,className,...rest}) => {
+export const Hyperlink = ({to,children,className,...rest}) => {
     
     return(
         <a
@@ -137,4 +145,16 @@ export const Note = ({children,className,...rest}) => {
             {children}
         </a>
     )
- }
+}
+
+
+export const VideoAdSm = ({className,children,href,embed,...rest}) => {
+    return (
+        <a href={href} target="_blank" rel="noreferrer" {...rest} className={`bg-white block h-min rounded-lg overflow-clip hover:scale-105 transition-all transform cursor-pointer ${className}`}>
+            <object data={embed} width='100%' >
+            </object>
+            <p className="p-2 font-lato text-gray-700 text-center">{children}</p>
+        </a>
+    )
+}
+

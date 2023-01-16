@@ -1,4 +1,4 @@
-import { Section, SectionHeader, TextSection } from "../components/custom.library"
+import { Section, SectionHeader, TextSection, VideoAdSm } from "../components/custom.library"
 
 
 const Videos = () => {
@@ -15,6 +15,14 @@ const Videos = () => {
                 fugit quo ipsum temporibus atque, nesciunt saepe officiis in 
                 eum sint deleniti.
             </TextSection>
+            <div className="md:flex justify-between my-2">
+                <VideoAdSm className="md:w-[48%]" href="https://youtu.be/NmiwAV9i5cY" embed="https://youtube.com/embed/NmiwAV9i5cY">
+                    What do we mean by "Sympathy"?
+                </VideoAdSm>
+                <VideoAdSm className="md:w-[48%] mt-4 md:mt-0" href="https://youtu.be/q2bykgueC1I" embed="https://youtube.com/embed/q2bykgueC1I">
+                    The Center's Affiliation with SOS
+                </VideoAdSm>
+            </div>
         </Section>
     )
 }
