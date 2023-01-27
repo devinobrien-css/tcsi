@@ -71,14 +71,11 @@ const contributionsMultiTab = [
 
     return (
         <>
+            <div className={`bg-gray-800 bg-opacity-50 absolute z-[999] h-full top-0 ${open?'w-full':'w-0'}`}
+                onClick={() => setOpen()}
+            ></div>
             <div 
                 className={`z-[1000] shadow-xl border h-full bg-tcsi-dark-green fixed left-0 top-0 transition-width duration-800 ${open?"w-2/3 md:w-1/3":"w-2"}`}
-                // onBlur={()=>{
-                //     setTimeout(()=>{
-                //         setOpen()
-                //     },400)
-                // }}
-                tabindex="0"
             >
                 <div 
                     className="absolute flex border-r border-t border-b bg-tcsi-dark-green cursor-pointer left-full top-14 h-10 w-4 rounded-r"
@@ -89,7 +86,7 @@ const contributionsMultiTab = [
                 </div>
 
                 <nav className={` text-lg overflow-hidden ${open?"w-full":"w-0"}`}>
-                    <TCSI className="p-4" />
+                    <TCSI className="p-2 w-4/5 mx-auto" />
                     <SideNavTab path="/about" title="about" icon="tabler:info-square" onClick={() => setOpen()}/>
                     <SideNavTab path="/panels" title="panels" icon="carbon:machine-learning-model" onClick={() => setOpen()} />
                     <SideNavTab path="/publications" title="publications" icon="ph:books-duotone" onClick={() => setOpen()}/>

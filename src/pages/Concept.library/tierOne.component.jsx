@@ -19,7 +19,6 @@ export const TierOne = () => {
     return (
         <div id="tier-section">
             <SectionHeader>Tier 1 - Intrapersonal/Within</SectionHeader>
-            
             <TextSection>
                 Sympathetic Intelligence at the individual level, is the Need, 
                 Capacity and Desire to be in sympathy with our environment. 

@@ -31,11 +31,18 @@ import Depthfullness from "./pages/Depthfullness.page";
 import Socioneurological from "./pages/Socioneurological.page";
 import Components from "./pages/Components.page";
 import Experiments from "./pages/Experiments.page";
+import HiddenHeaderNav from "./components/hiddenHeaderNav";
 
 const RenderPage = ({children,type}) => {
     return (
         <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-gradient bg-cover bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
-            <HeaderNav />
+            {
+                type==="concept"?(
+                    <HeaderNav />
+                ):(
+                    <HiddenHeaderNav />
+                )
+            }
             <SideNav />
             {children}
         </div>

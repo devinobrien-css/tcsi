@@ -77,14 +77,18 @@ const exploreMultiTab = [
 /** Main navigation bar
  * @returns a nav bar on the top of the page
  */
-const HeaderNav = ({ type }) => {
+const HiddenHeaderNav = ({ type }) => {
     const [open,setOpen] = useState()
+
+    const [hidden,setHidden] = useState()
+
     return (
         <>
-            <div className={`z-[500] shadow flex w-full justify-between bg-gradient-to-r fixed from-indigo-300 to-green-500`}>
+            <div className={`z-[500] shadow flex justify-between bg-gradient-to-r absolute from-indigo-300 to-green-500 ${hidden?'w-4 right-0 overflow-hidden':'w-full'}`}>
+                <p onClick={()=> hidden?setHidden():setHidden(true)}>clicky</p>
                 <p className="text-white font-extralight h-min my-auto text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
 
-                <nav className="flex text-gray-700 text-lg md:opacity-100 opacity-0 w-0 md:w-full justify-end transition-all">
+                <nav className={`flex text-gray-700 text-lg md:opacity-100 opacity-0 w-0 md:w-full justify-end transition-all ${hidden?'w-0 r-0 overflow-hidden':'w-full'}`}>
                     <HeaderNavTab path="/" title="home" />
                     <HeaderNavTab path="/origins" title="origins" />
                     <HeaderNavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} />
@@ -102,11 +106,7 @@ const HeaderNav = ({ type }) => {
                 <button className="absolute top-2 right-2" onClick={()=>setOpen()}>
                     <Icon icon={"ph:x-circle-bold"} width="50"/>
                 </button>
-                <nav className="flex flex-col items-center text-gray-200 text-lg justify-between transition-all" onClick={()=>{
-                    // setTimeout(()=>{
-                    //     setOpen()
-                    // },100)
-                }}>
+                <nav className="flex flex-col items-center text-gray-200 text-lg justify-between transition-all">
                     <HeaderNavTab path="/" title="home" onClick={() => {setOpen()}}/>
                     <HeaderNavTab path="/origins" title="origins" onClick={() => {setOpen()}}/>
                     <HeaderNavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} setNavOpen={setOpen} />
@@ -123,4 +123,4 @@ const HeaderNav = ({ type }) => {
         </>
     )
 }
-export default HeaderNav
+export default HiddenHeaderNav
