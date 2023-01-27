@@ -80,12 +80,14 @@ const exploreMultiTab = [
 const HiddenHeaderNav = ({ type }) => {
     const [open,setOpen] = useState()
 
-    const [hidden,setHidden] = useState()
+    const [hidden,setHidden] = useState(true)
 
     return (
         <>
-            <div className={`z-[500] shadow flex justify-between bg-gradient-to-r absolute from-indigo-300 to-green-500 ${hidden?'w-4 right-0 overflow-hidden':'w-full'}`}>
-                <p onClick={()=> hidden?setHidden():setHidden(true)}>clicky</p>
+            <div className={`z-[500] shadow flex justify-between bg-gradient-to-r absolute from-indigo-300 to-green-500 transition-all duration-1200 right-0 ${hidden?'w-8 overflow-hidden rounded-l-full':'w-full'}`}>
+
+                <Icon icon="material-symbols:arrow-circle-left-outline-rounded" width="30" className={`text-white my-auto  ${hidden?' mr-2 shrink-0':'ml-3 rotate-180'}`} onClick={()=> hidden?setHidden():setHidden(true)} />
+
                 <p className="text-white font-extralight h-min my-auto text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
 
                 <nav className={`flex text-gray-700 text-lg md:opacity-100 opacity-0 w-0 md:w-full justify-end transition-all ${hidden?'w-0 r-0 overflow-hidden':'w-full'}`}>
