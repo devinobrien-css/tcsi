@@ -68,6 +68,7 @@ const contributionsMultiTab = [
  */
  const SideNav = () => {
     const [open,setOpen] = useState()
+    const navigate = useNavigate()
 
     return (
         <>
@@ -75,21 +76,24 @@ const contributionsMultiTab = [
                 onClick={() => setOpen()}
             ></div>
             <div 
-                className={`z-[1000] shadow-xl border h-full bg-tcsi-dark-green fixed left-0 top-0 transition-width duration-800 ${open?"w-2/3 md:w-1/3":"w-2"}`}
+                className={`z-[1000] shadow-xl border h-full bg-tcsi-dark-green fixed left-0 top-0 transition-width duration-800 ${open?"w-4/5 md:w-1/3":"w-2"}`}
             >
                 <div 
-                    className="absolute flex border-r border-t border-b bg-tcsi-dark-green cursor-pointer left-full top-14 h-10 w-4 rounded-r"
+                    className="absolute flex border-r border-t border-b bg-tcsi-dark-green cursor-pointer left-full top-20 h-10 w-4 rounded-r"
                     onClick={() => {open?setOpen():setOpen(true)}}   
                 >
 
                     <Icon icon={"bi:chevron-bar-right"} width={40} className={`transform transition-all text-gray-800 ${open?"rotate-180":""}`}/>
                 </div>
 
-                <nav className={` text-lg overflow-hidden ${open?"w-full":"w-0"}`}>
-                    <TCSI className="p-2 w-4/5 mx-auto" />
+                <nav className={` text-lg overflow-x-hidden overflow-y-scroll h-[99%] ${open?"w-full":"w-0"}`}>
+                    <TCSI className="p-2 w-4/5 mx-auto" onClick={() => {
+                        navigate('/about')
+                        setOpen()
+                    }}/>
                     <SideNavTab path="/about" title="about" icon="tabler:info-square" onClick={() => setOpen()}/>
                     <SideNavTab path="/panels" title="panels" icon="carbon:machine-learning-model" onClick={() => setOpen()} />
-                    <SideNavTab path="/publications" title="publications" icon="ph:books-duotone" onClick={() => setOpen()}/>
+                    <SideNavTab path="/articles" title="articles" icon="ph:books-duotone" onClick={() => setOpen()}/>
                     <SideNavMultiTab path="/contributing" title="contributing" tabs={contributionsMultiTab} setNavOpen={setOpen}/>
                     <SideNavTab path="/contact" title="contact" icon="tabler:message-circle" onClick={() => setOpen()}/>
                 </nav>

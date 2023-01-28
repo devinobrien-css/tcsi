@@ -3,11 +3,11 @@ import { Note, Section, SectionHeader, TextSection } from "../components/custom.
 /**
  * @returns 
  */
-const Publications = () => {
+const Articles = () => {
     return (
         <Section className="p-4 md:p-12 md:mt-8 shadow bg-white">
                 <SectionHeader>
-                    Publications
+                    Articles
                 </SectionHeader>
                 <TextSection>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -23,4 +23,4 @@ const Publications = () => {
         </Section>
     )
 }
-export default Publications
+export default Articles

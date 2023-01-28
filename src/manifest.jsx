@@ -23,27 +23,24 @@ import About from "./pages/About.page";
 import Panels from "./pages/Panels.page";
 import Contributing from "./pages/Contributing.page";
 import Contact from "./pages/Contact.page";
-import Publications from "./pages/Publications.page";
+import Articles from "./pages/Articles.page";
 import Donations from "./pages/Donations.page";
 import Research from "./pages/Research.page";
 import Volunteering from "./pages/Volunteering.page";
 import Depthfullness from "./pages/Depthfullness.page";
 import Socioneurological from "./pages/Socioneurological.page";
 import Components from "./pages/Components.page";
-import Experiments from "./pages/Experiments.page";
-import HiddenHeaderNav from "./components/hiddenHeaderNav";
+import Experience from "./pages/Experience.page";
 
 const RenderPage = ({children,type}) => {
     return (
-        <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-gradient bg-cover bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
-            {
-                type==="concept"?(
-                    <HeaderNav />
-                ):(
-                    <HiddenHeaderNav />
-                )
-            }
+        <div className={`transition-colors duration-1000 min-h-screen border-red-500 overflow-y-scroll ${type==="concept"?"bg-gradient bg-cover bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
+            
+            <div className="overflow-hidden">
+                <HeaderNav  type={type}/>
+            </div>
             <SideNav />
+            <br/>
             {children}
         </div>
     )
@@ -82,8 +79,8 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "publications",
-        element:<RenderPage><Publications/></RenderPage>,
+        path: "Articles",
+        element:<RenderPage><Articles/></RenderPage>,
         errorElement:<Error />,
     },
     {
@@ -138,8 +135,8 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "experiments",
-        element: <RenderPage type="concept"><Experiments/></RenderPage>,
+        path: "experience",
+        element: <RenderPage type="concept"><Experience/></RenderPage>,
         errorElement:<Error />,
     },
     

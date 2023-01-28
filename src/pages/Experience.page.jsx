@@ -1,13 +1,13 @@
 import { Section, SectionHeader, TextSection } from "../components/custom.library"
 
-/** Experiments page
+/** Experience page
  * @returns 
  */
-const Experiments = () => {
+const Experience = () => {
     return (
         <Section className="text-white">
             <SectionHeader>
-                Experiments
+                Experience SI
             </SectionHeader>
             <TextSection  >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -20,4 +20,4 @@ const Experiments = () => {
         </Section>
     )
 }
-export default Experiments
+export default Experience
