@@ -25,12 +25,8 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
         <>
 
             <button 
-                onFocus={()=> {
-                    console.log('focus')
-                }}
                 onBlur={() => {
                     setOpen()
-                    console.log('click')
                 }}
                 className={`h-full capitalize relative cursor-pointer border-b-4 ${className} ${location.pathname.includes(title)?" border-orange-500":"border-transparent"}`} 
                 onClick={(event) => {
@@ -43,17 +39,17 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
             >
                 <div 
                     className="flex h-full w-max [&>*]:my-auto group p-4"
-                    onClick={()=>{
-                        if(open){
-                            navigate(tabs[0].path)
-                        }
-                    }}    
                 >
                     <p className={`pr-2 group-hover:scale-110 transform transition-all font-extralight`}>{title}</p>
                     <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
                 </div>
                 <div className={`z-[601] bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 overflow-hidden absolute whitespace-nowrap w-fit min-w-full left-0 top-full right-0 transition-all ${open?'h-48':'h-[0%]'}`}>
-                    {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {setNavOpen()}} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
+                    {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {
+                        console.log('click')
+                        setOpen()
+                        navigate(tabs[index].path)
+                        setNavOpen()
+                    }} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
                 </div>
             </button>
         </>

@@ -130,7 +130,7 @@ export const TierTwoSVG = () => {
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 416.3 768" style={{enableBackground:"new 0 0 416.3 768"}} >
                 
                 <g id="Layer_1_00000064332795385367215990000006408753576020418214_">
-                    <g class="opacity-25">
+                    <g className="opacity-25">
                         <g>
                             <defs>
                                 <rect id="SVGID_1_" x="0.1" y="1.5" width="204.3" height="392"/>
