@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
 import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
-
+import gsap from 'gsap'
 const tierData = {
     tier1:{
         svg:Tier1,
@@ -65,20 +65,42 @@ const Home = () => {
     const [tier,setTier] = useState(1)
     const SectionSVG = tierData[`tier${tier}`].svg
 
+    useEffect(() => {
+        gsap.fromTo("#main-svg",{
+            scale:0
+        },{
+            scale:1
+        })
+
+        gsap.fromTo("#header",{
+            opacity:0
+        },{
+            opacity:1,
+            duration:1
+        })
+
+        gsap.fromTo("#main-section",{
+            opacity:0
+        },{
+            opacity:1,
+            duration:1
+        })
+    },[])
+
     return (
         <div>
             <div className="w-11/12 mx-auto relative">
-                <OutlinedHeader>
+                <OutlinedHeader id="header">
                     Depthfullness
                 </OutlinedHeader>
-                <SectionHeader className="text-white">
+                <SectionHeader className="text-white" id="header">
                     Sympathetic Intelligence
                 </SectionHeader>
                 <div className="md:flex py-8">
-                    <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto">
+                    <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto" id="main-svg">
                         <MainSVG tier={tier} setTier={setTier}/>
                     </div>
-                    <div className="flex md:w-3/5 items-start">
+                    <div className="flex md:w-3/5 items-start" id="main-section">
                         <SectionSVG className="w-1/12" />
                         <div className="w-11/12 px-4">
                             <SectionHeader className="text-white">

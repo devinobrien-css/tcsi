@@ -1,21 +1,60 @@
+import { useState, useEffect } from "react"
+import gsap from 'gsap'
 import { SectionHeader, TextSection } from "../components/custom.library"
 import { OriginOneSVG, OriginThreeSVG, OriginTwoSVG } from "../resources/svg/originsSVG.library"
 
-
 const Origins = () => {
+
+    useEffect(() => {
+        gsap.fromTo("#origin-1",{
+            opacity:0
+        },{})
+        gsap.fromTo("#origin-2",{
+            opacity:0
+        },{})
+        gsap.fromTo("#origin-3",{
+            opacity:0
+        },{})
+        gsap.fromTo("#origin-text",{
+            opacity:0
+        },{
+            opacity:1
+        })
+        .then(() => {
+            gsap.fromTo("#origin-1",{
+                opacity:0
+            },{
+                opacity:1
+            })
+            .then(() => {
+                gsap.fromTo("#origin-2",{
+                    opacity:0
+                },{
+                    opacity:1
+                })
+                .then(() => {
+                    gsap.fromTo("#origin-3",{
+                        opacity:0
+                    },{
+                        opacity:1
+                    })
+                })
+            })
+        })
+    },[])
 
     return (
             <>
                 <div className="md:flex h-min">
                     <div className="flex justify-between md:mt-0 mt-10 md:w-3/12">
-                        <div className="my-auto w-4/12 md:w-full">
+                        <div className="my-auto w-4/12 md:w-full" id="origin-1">
                             {OriginOneSVG}
                         </div>
-                        <div className="md:hidden block w-4/12">
+                        <div className="md:hidden block w-4/12" id="origin-2">
                             {OriginTwoSVG}
                         </div>
                     </div>
-                    <div className="md:w-5/12 px-4">
+                    <div className="md:w-5/12 px-4" id="origin-text">
                         <SectionHeader className="text-white">Origins</SectionHeader>
                         <TextSection className="text-white">
                             The origins of the concept lie in the experience of 
@@ -52,11 +91,11 @@ const Origins = () => {
                             those moments was nothing short of AWESOME!
                         </TextSection>
                     </div>
-                    <div className="md:block hidden w-3/12">
+                    <div className="md:block hidden w-3/12" id="origin-2">
                         {OriginTwoSVG}
                     </div>
                 </div>
-                <div className="md:-mt-44">
+                <div className="md:-mt-44" id="origin-3">
                     {OriginThreeSVG}
                 </div>
             </> 

@@ -26,7 +26,10 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
 
             <button 
                 onBlur={() => {
-                    setOpen()
+                    setTimeout(() => {
+                        if(open)
+                            setOpen()
+                    },100)
                 }}
                 className={`h-full capitalize relative cursor-pointer border-b-4 ${className} ${location.pathname.includes(title)?" border-orange-500":"border-transparent"}`} 
                 onClick={(event) => {
@@ -46,9 +49,9 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
                 <div className={`z-[601] bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 overflow-hidden absolute whitespace-nowrap w-fit min-w-full left-0 top-full right-0 transition-all ${open?'h-48':'h-[0%]'}`}>
                     {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {
                         console.log('click')
-                        setOpen()
+                        // setOpen()
                         navigate(tabs[index].path)
-                        setNavOpen()
+                        // setNavOpen()
                     }} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
                 </div>
             </button>
