@@ -46,13 +46,15 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
                     <p className={`pr-2 group-hover:scale-110 transform transition-all font-extralight`}>{title}</p>
                     <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
                 </div>
-                <div className={`z-[601] bg-gradient-to-tr from-indigo-300 to-green-500 bg-opacity-10 overflow-hidden absolute whitespace-nowrap w-fit min-w-full left-0 top-full right-0 transition-all ${open?'h-48':'h-[0%]'}`}>
-                    {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {
-                        console.log('click')
-                        // setOpen()
-                        navigate(tabs[index].path)
-                        // setNavOpen()
-                    }} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
+                <div className={`z-[601] rounded-b-lg bg-gray-300 bg-opacity-30 absolute overflow-hidden whitespace-nowrap w-fit min-w-full left-0 top-[105%]  transition-all ${open?'h-48':'h-[0%]'}`}>
+                    <div className="backdrop-blur-md">
+                        {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {
+                            console.log('click')
+                            // setOpen()
+                            navigate(tabs[index].path)
+                            // setNavOpen()
+                        }} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
+                    </div>
                 </div>
             </button>
         </>
@@ -106,7 +108,7 @@ const HeaderNav = ({ type }) => {
 
     return (
         <>
-            <div className={`z-[499] shadow flex justify-between bg-gradient-to-r fixed right-0 from-indigo-300 to-green-500 transition-all duration-1200 ${hidden?'w-8 overflow-hidden rounded-l-full':'w-full'}`}>
+            <div className={`z-[499] backdrop-blur-md flex justify-between shadow-lg fixed right-0  transition-all duration-1200 ${hidden?'w-8 overflow-hidden rounded-l-full':'w-full'}`}>
 
                 <div className={`flex ${hidden?'flex-nowrap':'md:flex-nowrap flex-wrap'}`}>
                     {

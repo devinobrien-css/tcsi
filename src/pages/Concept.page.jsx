@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { TierButton } from "./Concept.library/tierButton.component"
 import { tierReferences } from "../manifest"
+import gsap from "gsap"
 
 /** Concept page
  * @returns the concept section breaking down each tier
@@ -13,15 +14,31 @@ const Concept = () => {
         setTab(params.tier||"tier1")
     },[params])
 
+    useEffect(()=>{
+        gsap.fromTo("#concept-svg",{
+            opacity:0
+        },{
+            opacity:1
+
+        })
+
+        gsap.fromTo("#concept-ad-video",{
+            scale:0
+        },{
+            scale:1
+
+        })
+    },[])
+
     const CurrentTier = tierReferences[tab].page
     const CurrentSVG = tierReferences[tab].svg
 
     return (
         <div className="flex overflow-clip">
-            <div className="w-2/5 max-h-full absolute opacity-50 md:hidden">
+            <div className="w-2/5 max-h-full absolute opacity-50 md:hidden" id="concept-svg">
                 <CurrentSVG />
             </div>
-            <div className="w-3/12 md:block hidden">
+            <div className="w-3/12 md:block hidden" id="concept-svg">
                 <CurrentSVG />
             </div>
             <div className="text-white px-2 mt-8 md:w-5/12 z-50">
@@ -43,7 +60,7 @@ const Concept = () => {
                     <CurrentTier />
                 </div>
             </div>
-            <div className="pl-8 mt-12 md:block hidden">
+            <div className="pl-8 mt-12 md:block hidden" id="concept-ad-video">
                 <a href="https://www.youtube.com/watch?v=NmiwAV9i5cY" className="bg-white block h-min rounded-lg overflow-clip hover:scale-105 transition-all transform cursor-pointer">
                     <object data="https://www.youtube.com/embed/NmiwAV9i5cY" width='100%'>
                     </object>

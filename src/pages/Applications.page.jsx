@@ -1,11 +1,35 @@
+import gsap from "gsap"
+import { useEffect } from "react"
 import { Hyperlink, Note, Section, SectionHeader, TextSection } from "../components/custom.library"
 
 /**
- * @returns 
+ * @returns the applications page
  */
 const Applications = () => {
+    useEffect(()=>{
+        gsap.fromTo("#note",{
+            opacity:0
+        },{})
+
+        gsap.fromTo("#text-section",{
+            opacity:0
+        },{
+            opacity:1
+
+        })
+        .then(() => {
+            gsap.fromTo("#note",{
+                opacity:1,
+                scaleX:0
+            },{
+                scaleX:1
+    
+            })
+        })
+    },[])
+
     return (
-        <Section className="text-white">
+        <Section className="text-white" id="text-section">
             <SectionHeader>
                 Applications
             </SectionHeader>
@@ -18,7 +42,7 @@ const Applications = () => {
                 fugit quo ipsum temporibus atque, nesciunt saepe officiis in 
                 eum sint deleniti.
             </TextSection>
-            <Note>
+            <Note id="note">
                 Here's an example of a note
             </Note>
         </Section>
