@@ -34,7 +34,7 @@ import Experience from "./pages/Experience.page";
 
 const RenderPage = ({children,type}) => {
     return (
-        <div className={`transition-colors duration-1000 min-h-screen border-red-500 overflow-y-scroll ${type==="concept"?"bg-gradient bg-cover bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
+        <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-cover bg-gradient bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
             
             <div className="overflow-hidden">
                 <HeaderNav  type={type}/>

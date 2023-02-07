@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react"
-import { useEffect } from "react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { MainSVG } from '../resources/svg/homeSVG.library.jsx'
 
@@ -34,15 +33,10 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
                 className={`h-full capitalize relative cursor-pointer border-b-4 ${className} ${location.pathname.includes(title)?" border-orange-500":"border-transparent"}`} 
                 onClick={(event) => {
                     if(open) setOpen()
-                    else{
-                        setOpen(true)
-                    }
-
+                    else setOpen(true)
                 }}
             >
-                <div 
-                    className="flex h-full w-max [&>*]:my-auto group p-4"
-                >
+                <div className="flex h-full w-max [&>*]:my-auto group p-4">
                     <p className={`pr-2 group-hover:scale-110 transform transition-all font-extralight`}>{title}</p>
                     <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
                 </div>
@@ -105,34 +99,30 @@ const HeaderNav = ({ type }) => {
 
     return (
         <>
-            <div className={`z-[499] backdrop-blur-md flex justify-between shadow-lg fixed right-0  transition-all duration-1200 w-full`}>
-
-                <div className={`flex justify-between`}>
-                    {
-                        type!=='concept'?
-                        (
-                            <Icon icon="material-symbols:arrow-circle-left-outline-rounded" width="30" className={`text-white my-auto `} onClick={()=> hidden?setHidden():setHidden(true)} />
-                        ):(
-                            <></>
-                        )
-                    }
-                    <p className="text-white font-extralight h-min my-auto text-2xl md:text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
-
+            <div className={`z-[499] backdrop-blur-md justify-between shadow-lg fixed right-0  transition-all duration-1200 w-full`}>
+                <div className="bg-black flex justify-end p-1">
+                    <p className="text-white underline font-light">Visit the Center for SI</p>
+                    <Icon icon="fa-solid:home" className="shrink-0 text-white my-auto mx-3"/>
                 </div>
 
-                <nav className={`flex text-gray-700 text-lg justify-end transition-all duration-1400  ${hidden?'w-0 overflow-hidden opacity-0':'opacity-1 overflow-hidden md:overflow-visible md:w-full w-0'}`}>
-                    <HeaderNavTab path="/" title="home" />
-                    <HeaderNavTab path="/origins" title="origins" />
-                    <HeaderNavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} setNavOpen={setOpen}/>
-                    <HeaderNavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab} setNavOpen={setOpen}/>
-                    <HeaderNavTab path="/applications" title="applications" />
-                    <HeaderNavTab path="/videos" title="videos" />
-                    <HeaderNavTab path="/experience" title="experience SI" />
-                </nav>
+                <div className="flex justify-between">
+                    <p className="text-white font-extralight h-min my-auto text-2xl md:text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
 
-                <button className="text-white md:w-0 transition-all">
-                    <Icon icon={"charm:menu-hamburger"} width="50" onClick={()=> open?setOpen():setOpen(true)}/>
-                </button>
+                    <nav className={`flex text-gray-700 text-lg justify-end transition-all duration-1400  ${hidden?'w-0 overflow-hidden opacity-0':'opacity-1 overflow-hidden md:overflow-visible md:w-full w-0'}`}>
+                        <HeaderNavTab path="/" title="home" />
+                        <HeaderNavTab path="/origins" title="origins" />
+                        <HeaderNavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} setNavOpen={setOpen}/>
+                        <HeaderNavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab} setNavOpen={setOpen}/>
+                        <HeaderNavTab path="/applications" title="applications" />
+                        <HeaderNavTab path="/videos" title="videos" />
+                        <HeaderNavTab path="/experience" title="experience SI" />
+                    </nav>
+
+                    <button className="text-white md:w-0 transition-all">
+                        <Icon icon={"charm:menu-hamburger"} width="50" onClick={()=> open?setOpen():setOpen(true)}/>
+                    </button>
+                </div>
+
             </div>
 
             {/* MOBILE VERSION MODAL */}
@@ -155,6 +145,8 @@ const HeaderNav = ({ type }) => {
                 </nav>
                 <MainSVG className="absolute"/>
             </div>
+            <br/>
+            <br/>
             <br/>
             <br/>
             <br/>

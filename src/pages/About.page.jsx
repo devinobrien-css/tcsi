@@ -54,7 +54,6 @@ const About = () => {
                 Here's an example of a note
             </Note>
         </Section>
-
     )
 }
 export default About

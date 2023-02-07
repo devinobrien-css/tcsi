@@ -25,7 +25,8 @@ module.exports = {
 			},
       backgroundImage:{
         'gradient':'url(./resources/img/bg-gradient.svg)',
-        'concert':'url(./resources/img/concert.jpg)'
+        'concert':'url(./resources/img/concert.jpg)',
+        'standard':'url(./resources/img/bg.png)'
       },
       transitionProperty: {
         'height': 'height',
