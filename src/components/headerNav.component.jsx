@@ -9,7 +9,7 @@ const HeaderNavTab = ({className,path,title,...rest}) => {
 
     return (
         <Link className="h-full group" to={path} >
-            <div {...rest} className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:scale-110 font-extralight transform transition-all border-b-4 ${className} ${path===location.pathname?" border-orange-500":"border-transparent"}`}>
+            <div {...rest} className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:scale-110 font-extralight transform transition-all border-b-4 ${className} ${path===location.pathname?" border-tcsi-yellow":"border-transparent"}`}>
                 <span>{title}</span>
             </div>
         </Link>
@@ -49,10 +49,7 @@ const HeaderNavMultiTab = ({className,title,tabs,setNavOpen}) => {
                 <div className={`z-[601] rounded-b-lg bg-gray-300 bg-opacity-30 absolute overflow-hidden whitespace-nowrap w-fit min-w-full left-0 top-[105%]  transition-all ${open?'h-48':'h-[0%]'}`}>
                     <div className="backdrop-blur-md">
                         {tabs.map((tab,index) => <HeaderNavTab className={``} onClick={() => {
-                            console.log('click')
-                            // setOpen()
                             navigate(tabs[index].path)
-                            // setNavOpen()
                         }} key={`multitab-${tab.title}-${index}`} path={tab.path} title={tab.title}/>)}
                     </div>
                 </div>
@@ -108,13 +105,13 @@ const HeaderNav = ({ type }) => {
 
     return (
         <>
-            <div className={`z-[499] backdrop-blur-md flex justify-between shadow-lg fixed right-0  transition-all duration-1200 ${hidden?'w-8 overflow-hidden rounded-l-full':'w-full'}`}>
+            <div className={`z-[499] backdrop-blur-md flex justify-between shadow-lg fixed right-0  transition-all duration-1200 w-full`}>
 
-                <div className={`flex ${hidden?'flex-nowrap':'md:flex-nowrap flex-wrap'}`}>
+                <div className={`flex justify-between`}>
                     {
                         type!=='concept'?
                         (
-                            <Icon icon="material-symbols:arrow-circle-left-outline-rounded" width="30" className={`text-white my-auto  ${hidden?' mr-2 shrink-0':'ml-3 rotate-180'}`} onClick={()=> hidden?setHidden():setHidden(true)} />
+                            <Icon icon="material-symbols:arrow-circle-left-outline-rounded" width="30" className={`text-white my-auto `} onClick={()=> hidden?setHidden():setHidden(true)} />
                         ):(
                             <></>
                         )
