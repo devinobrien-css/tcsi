@@ -365,6 +365,7 @@ export const MainSVG = ({tier,setTier}) => {
 }
 
 
+export const WhiteCirclesSVG = ({className}) => {
     return (
         <svg viewBox="0 0 500 500" className={`${className}`}>
             <g className="scale-50">
