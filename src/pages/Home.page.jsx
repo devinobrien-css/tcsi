@@ -1,123 +1,89 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
-import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
+import { CircleSVG, GroupOfPeople, MainSVG, WhiteCirclesSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
 import gsap from 'gsap'
-const tierData = {
-    tier1:{
-        svg:Tier1,
-        title:'Tier 1 - Intrapersonal/Within',
-        content:<>
-            Sympathetic Intelligence at the individual level, relies on the 
-            3 primary intelligence faculties of Gut, Mind and Heart. The SI 
-            sense and response capacity is determined by the brain's capacity 
-            to integrate these three primary intelligences into one simultaneous 
-            behavior. Using this Executive capability we process stimuli 
-            prompted senses and convert them into feelings that are either 
-            instinctual, cognitive or emotional, which we then rely upon to 
-            respond in a cohesive manner that is In Sympathy with the context 
-            of our surroundings. The integration is seamless, spontaneous and 
-            continual and focused on returning behavior that is appropriate 
-            and assures life quality on a continuum from survival to optimal.
-        </>
-    },
-    tier2:{
-        svg:Tier2,
-        title:'Tier 2 - Interpersonal/Between',
-        content:<>
-            Sympathetic Intelligence at this level is driven by a survivalist 
-            Need, Desire and Capacity to belong or be connected by the 
-            individual, but extends intelligence beyond the individual 
-            and is said to be within, between and amongst all of us. It 
-            starts with person-to-person engagement and builds to an 
-            ever-strengthening attachment with those immediately around 
-            each individual extending to a social network as we become 
-            members of groups such as partnerships, teams and communities. 
-            We first match, then connect and bond. Sympathetic Intelligence 
-            at this level becomes a multi-layered Collective phenomenon that 
-            manifests in a multitude of ways from flow states visible in teams 
-            to the vibes felt in audiences.
-        </>
-    },
-    tier3:{
-        svg:Tier3,
-        title:'Tier 3 - Extrapersonal/Amongst',
-        content:<>
-            Sympathetic Intelligence at this level is visible in 
-            the day to day activities of societies through their 
-            cultures, conformity and compliance through common 
-            purpose, adherence to standards and norms, including 
-            the rules and laws of order necessary for a community 
-            to execute on the social contract deeply embodied in 
-            our communal existence. At this level it is not 
-            possible for it to present in collective spontaneous 
-            behavior, but can present as a sense of national pride 
-            or togetherness visible during certain special 
-            occasions. We rely on this level of Sympathetic 
-            Intelligence as we Live, Learn and Work.
-        </>
-    }
-}
+import { Icon } from "@iconify/react"
 
 const Home = () => {
     const navigate = useNavigate()
-    const [tier,setTier] = useState(1)
-    const SectionSVG = tierData[`tier${tier}`].svg
-
-    useEffect(() => {
-        gsap.fromTo("#main-svg",{
-            scale:0
-        },{
-            scale:1
-        })
-
-        gsap.fromTo("#header",{
-            opacity:0
-        },{
-            opacity:1,
-            duration:1
-        })
-
-        gsap.fromTo("#main-section",{
-            opacity:0
-        },{
-            opacity:1,
-            duration:1
-        })
-    },[])
 
     return (
-        <div>
-            <div className="w-11/12 mx-auto relative">
-                <OutlinedHeader id="header">
-                    Depthfullness
-                </OutlinedHeader>
-                <SectionHeader className="text-white" id="header">
-                    Sympathetic Intelligence
-                </SectionHeader>
-                <div className="md:flex py-8">
-                    <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto" id="main-svg">
-                        <MainSVG tier={tier} setTier={setTier}/>
+        <div className="md:flex">
+            <div className="bg-tcsi-dark-green md:w-1/2 md:h-screen z-[100] relative overflow-hidden flex pb-48">
+                <WhiteCirclesSVG  className="absolute top-10 translate-x-[75%]"/>
+                <div className="w-full mx-auto my-auto py-8">
+                    <div className="mx-auto w-fit pr-8">
+                        <p className="ml-4 text-xl"><span className="text-4xl">visit</span> the</p>
+                        <p className="text-xl">Center for <span className="text-4xl">Sympathetic Intelligence</span></p>
                     </div>
-                    <div className="flex md:w-3/5 items-start" id="main-section">
-                        <SectionSVG className="w-1/12" />
-                        <div className="w-11/12 px-4">
-                            <SectionHeader className="text-white">
-                                {tierData[`tier${tier}`].title}
-                            </SectionHeader>
-                            <br/>
-                            <TextSection className="text-white">
-                                {tierData[`tier${tier}`].content}
-                            </TextSection>
-                            <GroupOfPeople partition={tier}/>
-                            <RedButton 
-                                className="translate-x-10 -translate-y-20"
-                                onClick={() => {
-                                    navigate(`concept/tier${tier}`)
-                                }}
-                            >Learn More</RedButton>
+
+                    <div className="bg-white md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 my-6">
+                        <p className="text-lg">
+                            The Center for Sympathetic Inteligence brings together scientists and engineers 
+                            from academia and industry in collaborative partnerships to tackle important 
+                            research questions related to the concept of Sympathetic Intelligence and 
+                            its applications.
+                        </p>
+                    </div>
+                    <div className="flex justify-evenly w-10/12 text-lg font-light font-roboto">
+                        <p>About Us</p>
+                        <p>Our Mission</p>
+                        <p>Panels</p>
+                        <p>Publications</p>
+                        <p>Donate</p>
+                        <p>Contact</p>
+                    </div>
+
+                    <Icon 
+                        icon="gg:play-button" 
+                        className="text-white rounded-full bg-white bg-opacity-30 my-8 border mx-auto cursor-pointer hover:scale-105 transition-all" 
+                        width="90"
+                        onClick={()=>{
+                            navigate('/about')
+                        }}
+                    />
+
+                </div>
+            </div>
+            <div className="md:w-1/2 mx-auto relative ">
+                <div className="-translate-x-[25%] translate-y-[25%] w-[120%]">
+                    <CircleSVG className="rounded-full float-left w-3/6" style={{shapeOutside:'circle()'}}/>
+                    <div className="w-full pt-16">
+                        <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
+                        <p className="text-4xl">Sympathetic Intelligence</p>
+                        <div className="my-12 font-light font-roboto text-lg">
+                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
+                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
+                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>
+                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/videos')}>Videos</p>
+                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/experiments')}>Experiments</p>
                         </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <p className="text-lg">
+                            Sympathetic Intelligence is an innate regulatory
+                            sense and response mechanism which each of us has
+                            and which binds us all together as a species.
+                            It is present at that point of inflection which is 
+                            at the center of every human transaction, the 
+                            measure of which is seen in the degree of care 
+                            exhibited by our behavior and the result of which
+                            can be a better society for all.
+                        </p>
+
+
+                        <Icon 
+                            icon="gg:play-button" 
+                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all" 
+                            width="90"
+                            onClick={()=>{
+                                navigate('/about-concept')
+                            }}
+                        />
                     </div>
                 </div>
             </div>

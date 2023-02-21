@@ -6,7 +6,7 @@
    II. Concept Page Tabs 
 */
 
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, useLocation } from "react-router-dom";
 import Videos from "./pages/Videos.page";
 import Concept from "./pages/Concept.page";
 import Error from "./pages/Error.page";
@@ -16,9 +16,7 @@ import { TierOne } from "./pages/Concept.library/tierOne.component";
 import { TierTwo } from "./pages/Concept.library/tierTwo.component";
 import { TierThree } from "./pages/Concept.library/tierThree.component";
 import { TierOneSVG, TierThreeSVG, TierTwoSVG } from "./resources/svg/conceptSVG.library";
-import Home from "./pages/Home.page";
-import HeaderNav from "./components/headerNav.component";
-import SideNav from "./components/sideNav.component";
+
 import About from "./pages/About.page";
 import Panels from "./pages/Panels.page";
 import Contributing from "./pages/Contributing.page";
@@ -31,16 +29,22 @@ import Depthfullness from "./pages/Depthfullness.page";
 import Socioneurological from "./pages/Socioneurological.page";
 import Components from "./pages/Components.page";
 import Experience from "./pages/Experience.page";
+import AboutConcept from "./pages/AboutConcept.page";
+import Home from "./pages/Home.page";
+import Nav from "./components/navigation/Nav";
+
 
 const RenderPage = ({children,type}) => {
+    const location = useLocation();
+
     return (
         <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-cover bg-gradient bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
             
             <div className="overflow-hidden">
-                <HeaderNav  type={type}/>
+                {location.pathname === "/"?<></>:<Nav  type={type}/>}
             </div>
-            <SideNav />
-            <br/>
+            {/* <SideNav /> */}
+
             {children}
         </div>
     )
@@ -57,6 +61,11 @@ export const router = createBrowserRouter([
     {
         path: "about",
         element:<RenderPage><About/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
+        path: "about-concept",
+        element:<RenderPage type="concept"><AboutConcept/></RenderPage>,
         errorElement:<Error />,
     },
     {
