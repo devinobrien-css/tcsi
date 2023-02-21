@@ -1,9 +1,5 @@
-import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
-import { CircleSVG, GroupOfPeople, MainSVG, WhiteCirclesSVG } from "../resources/svg/homeSVG.library"
-import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
-import gsap from 'gsap'
+import { CircleSVG, WhiteCirclesSVG } from "../resources/svg/homeSVG.library"
 import { Icon } from "@iconify/react"
 
 const Home = () => {
