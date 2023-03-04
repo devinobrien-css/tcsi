@@ -11,7 +11,7 @@ const Nav = ({ type }) => {
 
     return (
         <>
-            <div className={`z-[499] ${type==='concept'?'backdrop-blur-md':'bg-tcsi-dark-green'} justify-between shadow-lg fixed right-0  transition-all duration-2000 w-full`}>
+            <div className={`z-[499] ${type==='concept'?'backdrop-blur-md':'bg-white'} justify-between shadow-lg fixed right-0  transition-all duration-2500 w-full`}>
                 <div className="bg-black flex justify-end p-1">
                     <p 
                         className="text-white underline font-light cursor-pointer"

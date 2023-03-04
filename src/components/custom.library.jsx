@@ -76,7 +76,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
  export const SectionHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-3xl md:text-4xl font-light mt-4 font-roboto ${className}`}
+            className={`text-3xl md:text-4xl font-light font-roboto ${className}`}
             {...rest}
         >
             {children}
