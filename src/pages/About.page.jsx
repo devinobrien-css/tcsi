@@ -6,18 +6,17 @@ import { Note, Section, SectionHeader, SectionSubHeader, TextSection } from "../
 const About = () => {
     return (
         <>
-            <div className="bg-white w-4/5 h-96 md:mt-16 flex">
-                <div className="h-full flex flex-col w-full">
-                    <SectionHeader className="text-tcsi-lightblue my-auto mx-24">
+            <div className="bg-white w-4/5 md:mt-16 md:flex">
+                <div className="h-full flex flex-col w-full py-24">
+                    <SectionHeader className="text-tcsi-lightblue my-auto md:mx-24 mx-auto p-2">
                         Bringing Depth to Life
                     </SectionHeader>
                 </div>
-                <div className="h-full flex">
+                <div className="h-full md:flex hidden my-auto">
                     <p className="my-auto w-2/3 mx-auto text-lg font-roboto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla dolorem veniam ratione libero, assumenda cum? At ab nobis consequatur consectetur. Repellat, maxime consequatur deserunt qui odio rerum voluptate esse! Quam id, laboriosam a voluptatibus voluptate nulla in adipisci error necessitatibus aspernatur accusantium, ad quia!
                     </p>
                 </div>
-
             </div>
             <br/>
             <br/>

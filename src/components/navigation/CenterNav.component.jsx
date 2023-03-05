@@ -32,8 +32,8 @@ export const CenterNav = () => {
             <nav className={`flex text-gray-700 text-lg justify-end transition-all duration-1400`}>
                 <NavTab path="/about" title="about" icon="tabler:info-square" />
                 <NavTab path="/panels" title="panels" icon="carbon:machine-learning-model"  />
-                <NavTab path="/articles" title="articles" icon="ph:books-duotone" />
-                <NavMultiTab path="/contributing" title="concept" tabs={contributionsMultiTab}/>
+                <NavTab path="/publications" title="publications" icon="ph:books-duotone" />
+                <NavMultiTab path="/contributing" title="contributing" tabs={contributionsMultiTab}/>
                 <NavTab path="/contact" title="contact" icon="tabler:message-circle" />
             </nav>
         </div>

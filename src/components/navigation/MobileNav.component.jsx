@@ -3,41 +3,76 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { NavMultiTab, NavTab } from "./NavTab.components"
 
-export const MobileNav = () => {
-    const [open,setOpen] = useState()
+export const MobileNav = ({open,setOpen}) => {
     const navigate = useNavigate()
     return(
-        <>
-            <button className="text-white md:w-0 transition-all">
-                <Icon 
-                    icon={"charm:menu-hamburger"} 
-                    width="50" 
-                    onClick={()=> open?setOpen():setOpen(true)}
-                />
-            </button>
-            <div  className={`z-[500] absolute overflow-hidden transition-all duration-[800ms] top-0 right-0 ${open?'w-full h-full opacity-100':'w-0 h-0 opacity-0'} bg-gradient bg-cover bg-no-repeat`}>
-                <button 
-                    className="absolute top-2 right-2 text-white" 
-                    onClick={()=>setOpen()}
-                >
-                    <Icon icon={"ph:x-circle-bold"} width="50"/>
-                </button>
-                <nav 
-                    className="flex flex-col items-center text-gray-200 text-lg justify-between transition-all" 
-                    onClick={()=>{
-                    
-                    }}
-                >
-                    <NavTab path="/" title="about" onClick={() => {setOpen()}}/>
-                    <NavTab path="/origins" title="origins" onClick={() => {setOpen()}}/>
-                    <NavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab} setNavOpen={setOpen} />
-                    <NavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab} setNavOpen={setOpen}/>
-                    <NavTab path="/applications" title="applications" onClick={() => {setOpen()}}/>
-                    <NavTab path="/videos" title="videos" onClick={() => {setOpen()}}/>
-                    <NavTab path="/experience" title="experience SI" onClick={() => {setOpen()}}/>
-                </nav>
-                <MainSVG className="absolute"/>
+        <div className={`absolute w-screen h-screen bg-white bg-opacity-90 flex transition-all z-[5000] ${open?'opacity-100':'opacity-0 scale-0'}`}>
+            <div  className={`bg-white w-[90%] h-fit mx-auto my-auto overflow-scroll relative transform transition-all ${open?'scale-100':'scale-0'}`}>
+                
+
+                <div className="bg-gray-300 p-4 text-lg text-tcsi-navy flex justify-between">
+                    <p>The Center for Sympathetic Intelligence</p>
+
+                    <button 
+                        className="text-tcsi-navy" 
+                        onClick={()=>setOpen()}
+                    >
+                        <Icon icon={"ph:x"} width="35"/>
+                    </button>
+                </div>
+                <div className="p-4">
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/about")
+                        setOpen()
+                    }}>About Us</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/about")
+                        setOpen()
+                    }}>Our Mission</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/panels")
+                        setOpen()
+                    }}>Panels</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/publications")
+                        setOpen()
+                    }}>Publications</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/donations")
+                        setOpen()
+                    }}>Donate</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/contact")
+                        setOpen()
+                    }}>Contact</p>
+                </div>
+
+                <div className="bg-gray-300 p-4 text-lg text-tcsi-navy">
+                    <p>The Concept of Sympathetic Intelligence</p>
+                </div>
+                <div className="p-4">
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/concept")
+                        setOpen()
+                    }}>Concept</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/tiers")
+                        setOpen()
+                    }}>The Tiers</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/applications")
+                        setOpen()
+                    }}>Applications</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/videos")
+                        setOpen()
+                    }}>Videos</p>
+                    <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
+                        navigate("/experiments")
+                        setOpen()
+                    }}>Experiments</p>
+                </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -21,7 +21,7 @@ import About from "./pages/About.page";
 import Panels from "./pages/Panels.page";
 import Contributing from "./pages/Contributing.page";
 import Contact from "./pages/Contact.page";
-import Articles from "./pages/Articles.page";
+import Publications from "./pages/Publications.page";
 import Donations from "./pages/Donations.page";
 import Research from "./pages/Research.page";
 import Volunteering from "./pages/Volunteering.page";
@@ -88,8 +88,8 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "Articles",
-        element:<RenderPage><Articles/></RenderPage>,
+        path: "publications",
+        element:<RenderPage><Publications/></RenderPage>,
         errorElement:<Error />,
     },
     {
@@ -148,7 +148,11 @@ export const router = createBrowserRouter([
         element: <RenderPage type="concept"><Experience/></RenderPage>,
         errorElement:<Error />,
     },
-    
+    {
+        path: "donations",
+        element: <RenderPage><Donations/></RenderPage>,
+        errorElement:<Error />,
+    },
 ]);
 
 /** Tab navigation for the Concept page

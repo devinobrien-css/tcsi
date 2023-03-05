@@ -7,15 +7,33 @@ const Home = () => {
 
     return (
         <div className="md:flex">
-            <div className="bg-tcsi-dark-green md:w-1/2 md:h-screen z-[100] relative overflow-hidden flex pb-48">
-                <WhiteCirclesSVG  className="absolute top-10 translate-x-[75%]"/>
-                <div className="w-full mx-auto my-auto py-8">
-                    <div className="mx-auto w-fit pr-8">
+
+            <div className="bg-tcsi-dark-green md:w-1/2 md:h-screen min-h-full z-[100] relative overflow-hidden flex">
+                <WhiteCirclesSVG  className="absolute top-6 z-0 translate-x-[73%] block md:hidden h-fit"/>
+                
+                <WhiteCirclesSVG  className="absolute top-10 translate-x-[75%] md:block hidden"/>
+
+                <div className="w-full mx-auto my-auto md:py-8">
+                    <div className="mx-auto w-fit p-2 md:pr-8 z-[500] md:block hidden">
                         <p className="ml-4 text-xl"><span className="text-4xl">visit</span> the</p>
                         <p className="text-xl">Center for <span className="text-4xl">Sympathetic Intelligence</span></p>
                     </div>
 
-                    <div className="bg-white md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 my-6">
+
+                    <div className="mx-auto w-fit p-4 z-[500] block md:hidden">
+                        <p className="text-3xl font-light py-6">visit the Center for Sympathetic Intelligence</p>
+                    </div>
+
+
+                    <div className="bg-white md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 md:my-6 ">
+                        <Icon 
+                            icon="gg:play-button" 
+                            className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-green" 
+                            width="70"
+                            onClick={()=>{
+                                navigate('/about')
+                            }}
+                        />
                         <p className="text-lg">
                             The Center for Sympathetic Inteligence brings together scientists and engineers 
                             from academia and industry in collaborative partnerships to tackle important 
@@ -23,7 +41,8 @@ const Home = () => {
                             its applications.
                         </p>
                     </div>
-                    <div className="flex justify-evenly w-10/12 text-lg font-light font-roboto">
+
+                    <div className="flex-wrap justify-evenly w-10/12 text-lg font-light font-roboto [&>*]:mx-1 mx-auto md:flex hidden">
                         <p>About Us</p>
                         <p>Our Mission</p>
                         <p>Panels</p>
@@ -34,33 +53,50 @@ const Home = () => {
 
                     <Icon 
                         icon="gg:play-button" 
-                        className="text-white rounded-full bg-white bg-opacity-30 my-8 border mx-auto cursor-pointer hover:scale-105 transition-all" 
+                        className="text-white rounded-full bg-white bg-opacity-30 my-8 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
                         width="90"
                         onClick={()=>{
                             navigate('/about')
                         }}
                     />
-
                 </div>
             </div>
             <div className="md:w-1/2 mx-auto relative ">
-                <div className="-translate-x-[25%] translate-y-[25%] w-[120%]">
-                    <CircleSVG className="rounded-full float-left w-3/6" style={{shapeOutside:'circle()'}}/>
-                    <div className="w-full pt-16">
-                        <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
-                        <p className="text-4xl">Sympathetic Intelligence</p>
-                        <div className="my-12 font-light font-roboto text-lg">
-                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
-                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
-                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>
-                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/videos')}>Videos</p>
-                            <p className="float-left mx-2 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/experiments')}>Experiments</p>
-                        </div>
-                        <br/>
-                        <br/>
-                        <br/>
+                <div className="md:-translate-x-[25%] md:translate-y-[25%] md:w-[130%]">
+                    <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
+                    <div className="w-full md:pt-16 p-4 md:text-black text-white font-light">
 
-                        <p className="text-lg">
+
+
+                        <div className="md:block hidden">
+                            <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
+                            <p className="text-4xl">Sympathetic Intelligence</p>
+                        </div>
+
+                        <div className="block md:hidden">
+                            <p className="text-3xl">Explore the concept of Sympathetic Intelligence</p>
+                        </div>
+
+
+
+                        <div className="my-12 font-light font-roboto text-lg md:flex hidden">
+                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
+                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
+                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>
+                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/videos')}>Videos</p>
+                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/experiments')}>Experiments</p>
+                        </div>
+
+                        <Icon 
+                            icon="gg:play-button" 
+                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto my-4 cursor-pointer hover:scale-105 transition-all block md:hidden" 
+                            width="70"
+                            onClick={()=>{
+                                navigate('/about-concept')
+                            }}
+                        />
+
+                        <p className="text-lg md:pl-4 text-justify md:text-left">
                             Sympathetic Intelligence is an innate regulatory
                             sense and response mechanism which each of us has
                             and which binds us all together as a species.
@@ -70,11 +106,10 @@ const Home = () => {
                             exhibited by our behavior and the result of which
                             can be a better society for all.
                         </p>
-
-
+                        <br/>
                         <Icon 
                             icon="gg:play-button" 
-                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all" 
+                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
                             width="90"
                             onClick={()=>{
                                 navigate('/about-concept')

@@ -114,7 +114,7 @@ const AboutConcept = () => {
                             <RedButton 
                                 className="translate-x-10 -translate-y-20"
                                 onClick={() => {
-                                    navigate(`concept/tier${tier}`)
+                                    navigate(`/concept/tier${tier}`)
                                 }}
                             >Learn More</RedButton>
                         </div>
