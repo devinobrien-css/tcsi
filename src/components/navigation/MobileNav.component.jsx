@@ -56,7 +56,7 @@ export const MobileNav = ({open,setOpen}) => {
                         setOpen()
                     }}>Concept</p>
                     <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
-                        navigate("/tiers")
+                        navigate("/concept/tier1")
                         setOpen()
                     }}>The Tiers</p>
                     <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
@@ -68,9 +68,9 @@ export const MobileNav = ({open,setOpen}) => {
                         setOpen()
                     }}>Videos</p>
                     <p className="font-light py-1 cursor-pointer text-lg" onClick={()=>{
-                        navigate("/experiments")
+                        navigate("/experience")
                         setOpen()
-                    }}>Experiments</p>
+                    }}>Experience</p>
                 </div>
             </div>
         </div>

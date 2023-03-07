@@ -32,12 +32,12 @@ const exploreMultiTab = [
 
 
 
-export const ConceptNav = () => {
+export const ConceptNav = ({Burger}) => {
     return(
         <div className="flex justify-between">
             <p className="text-white font-extralight h-min my-auto text-2xl md:text-3xl py-2 px-4 whitespace-nowrap">Sympathetic Intelligence</p>
 
-            <nav className={`flex text-gray-700 text-lg justify-end transition-all duration-1400`}>
+            <nav className={`text-gray-700 text-lg justify-end transition-all duration-1400 md:flex hidden`}>
                 <NavTab path="/about-concept" title="about" />
                 <NavTab path="/origins" title="origins" />
                 <NavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab}/>
@@ -46,6 +46,8 @@ export const ConceptNav = () => {
                 <NavTab path="/videos" title="videos" />
                 <NavTab path="/experience" title="experience SI" />
             </nav>
+
+            <Burger />
         </div>
     )
 }

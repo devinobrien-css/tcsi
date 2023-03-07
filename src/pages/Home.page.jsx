@@ -7,21 +7,20 @@ const Home = () => {
 
     return (
         <div className="md:flex">
-
             <div className="bg-tcsi-dark-green md:w-1/2 md:h-screen min-h-full z-[100] relative overflow-hidden flex">
                 <WhiteCirclesSVG  className="absolute top-6 z-0 translate-x-[73%] block md:hidden h-fit"/>
                 
-                <WhiteCirclesSVG  className="absolute top-10 translate-x-[75%] md:block hidden"/>
+                <WhiteCirclesSVG  className="absolute top-2 translate-x-[75%] z-0 md:block hidden"/>
 
-                <div className="w-full mx-auto my-auto md:py-8">
+                <div className="w-full mx-auto my-auto">
                     <div className="mx-auto w-fit p-2 md:pr-8 z-[500] md:block hidden">
                         <p className="ml-4 text-xl"><span className="text-4xl">visit</span> the</p>
                         <p className="text-xl">Center for <span className="text-4xl">Sympathetic Intelligence</span></p>
                     </div>
 
 
-                    <div className="mx-auto w-fit p-4 z-[500] block md:hidden">
-                        <p className="text-3xl font-light py-6">visit the Center for Sympathetic Intelligence</p>
+                    <div className="mx-auto w-fit p-4 z-[1000] block md:hidden">
+                        <p className="text-3xl font-light py-6 z-[1000]">visit the Center for Sympathetic Intelligence</p>
                     </div>
 
 
@@ -63,6 +62,8 @@ const Home = () => {
             </div>
             <div className="md:w-1/2 mx-auto relative ">
                 <div className="md:-translate-x-[25%] md:translate-y-[25%] md:w-[130%]">
+
+
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
                     <div className="w-full md:pt-16 p-4 md:text-black text-white font-light">
 
@@ -96,7 +97,7 @@ const Home = () => {
                             }}
                         />
 
-                        <p className="text-lg md:pl-4 text-justify md:text-left">
+                        <p className="text-lg md:pl-6 text-justify md:text-left">
                             Sympathetic Intelligence is an innate regulatory
                             sense and response mechanism which each of us has
                             and which binds us all together as a species.

@@ -365,9 +365,9 @@ export const MainSVG = ({tier,setTier}) => {
 }
 
 
-export const WhiteCirclesSVG = ({className}) => {
+export const WhiteCirclesSVG = ({className,...rest}) => {
     return (
-        <svg viewBox="0 0 500 500" className={`${className}`}>
+        <svg viewBox="0 0 500 500" className={`${className}`} {...rest}>
             <g className="scale-50">
                 <path className="fill-white" d="M252.7,227.1c14.1,0,25.6,11.5,25.6,25.6c0,14.1-11.5,25.6-25.6,25.6c-14.1,0-25.6-11.5-25.6-25.6    C227.1,238.6,238.6,227.1,252.7,227.1 M252.7,226.1c-14.7,0-26.6,11.9-26.6,26.6s11.9,26.6,26.6,26.6s26.6-11.9,26.6-26.6    S267.4,226.1,252.7,226.1L252.7,226.1z"/>
                 <path className="fill-white" d="M252.7,198.8c29.7,0,53.9,24.2,53.9,53.9s-24.2,53.9-53.9,53.9s-53.9-24.2-53.9-53.9S223,198.8,252.7,198.8     M252.7,197.8c-30.3,0-54.9,24.6-54.9,54.9s24.6,54.9,54.9,54.9s54.9-24.6,54.9-54.9S283,197.8,252.7,197.8L252.7,197.8z"/>

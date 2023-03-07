@@ -32,6 +32,8 @@ import Experience from "./pages/Experience.page";
 import AboutConcept from "./pages/AboutConcept.page";
 import Home from "./pages/Home.page";
 import Nav from "./components/navigation/Nav";
+import Mission from "./pages/Mision.page";
+import Board from "./pages/Board.page";
 
 
 const RenderPage = ({children,type}) => {
@@ -61,6 +63,16 @@ export const router = createBrowserRouter([
     {
         path: "about",
         element:<RenderPage><About/></RenderPage>,
+        children:[
+            {
+                path: "/about/mission",
+                element: <Mission />,
+            },
+            {
+                path: "/about/board",
+                element: <Board />,
+            }
+        ],
         errorElement:<Error />,
     },
     {

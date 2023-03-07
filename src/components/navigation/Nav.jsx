@@ -12,6 +12,14 @@ const Nav = ({ type }) => {
     const navigate = useNavigate()
     const [modal,setModal] = useState(false)
 
+    const Burger = () => {
+        return (
+            <div className={`shadow m-1 bg-white bg-opacity-60 text-gray-700 rounded-lg md:hidden ${modal?'hidden':''}`} onClick={()=>setModal(true)}>
+                <Icon icon="radix-icons:hamburger-menu" width="50" />
+            </div>
+        )
+    }
+
     return (
         <>
             <MobileNav open={modal} setOpen={setModal}/>
@@ -30,18 +38,15 @@ const Nav = ({ type }) => {
                     />
                 </div>
 
-                <div className={`md:block hidden`}>
+                <div>
                 {
                     type==='concept'?(
-                        <ConceptNav />
+                        <ConceptNav Burger={Burger}/>
                     ):(
-                        <CenterNav />
+                        <CenterNav Burger={Burger}/>
                     )
                 }
                 </div>
-            </div>
-            <div className={`absolute top-10 right-4 bg-white md:hidden ${modal?'hidden':''}`} onClick={()=>setModal(true)}>
-                <Icon icon="radix-icons:hamburger-menu" width="50" />
             </div>
 
             
