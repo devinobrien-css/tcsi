@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 import { Note, Section, SectionHeader, SectionSubHeader, TextSection } from "../components/custom.library"
 
@@ -29,7 +30,6 @@ const About = () => {
                             </div>
                             <svg x="0px" y="0px" viewBox="0 0 58.5 58.5" className="absolute top-[92%] left-1/2" width="55" onClick={()=>{
                                 document.getElementById("scrollToSection").scrollIntoView({behavior:"smooth"})
-                            
                             }}>
                                 
                                 <g>
