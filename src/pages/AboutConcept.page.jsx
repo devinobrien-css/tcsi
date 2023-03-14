@@ -93,9 +93,6 @@ const AboutConcept = () => {
                 <OutlinedHeader id="header">
                     Depthfullness
                 </OutlinedHeader>
-                <SectionHeader className="text-white" id="header">
-                    Sympathetic Intelligence
-                </SectionHeader>
                 <div className="md:flex py-8">
                     <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto" id="main-svg">
                         <MainSVG tier={tier} setTier={setTier}/>

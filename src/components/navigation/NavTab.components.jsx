@@ -41,7 +41,7 @@ export const NavMultiTab = ({className,title,tabs}) => {
                     <p className={`pr-2 group-hover:border-red-500 transform transition-all font-extralight`}>{title}</p>
                     <Icon icon={(open?"material-symbols:expand-circle-down-outline-rounded":"material-symbols:expand-circle-down-rounded")} className={`transition-all ${(open?"":"rotate-180")}`} />
                 </div>
-                <div className={`z-[601] rounded-b-lg bg-gray-300 bg-opacity-30 absolute overflow-hidden whitespace-nowrap w-fit min-w-full left-0 top-[105%]  transition-all ${open?'h-48':'h-[0%]'}`}>
+                <div className={`z-[601] rounded-b-lg bg-gray-300 bg-opacity-20 absolute overflow-hidden whitespace-nowrap w-fit min-w-full left-0 top-[105%] transition-all ${open?`h-[${100*tabs.length}%]`:'h-[0%]'}`}>
                     <div className="backdrop-blur-lg bg-white bg-opacity-50">
                         {tabs.map((tab,index) => <NavTab className={``} onClick={() => {
                             navigate(tabs[index].path)

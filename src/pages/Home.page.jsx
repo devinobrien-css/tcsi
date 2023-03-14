@@ -52,7 +52,7 @@ const Home = () => {
 
                     <Icon 
                         icon="gg:play-button" 
-                        className="text-white rounded-full bg-white bg-opacity-30 my-8 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
+                        className="text-white rotate-180 rounded-full bg-white bg-opacity-30 my-8 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
                         width="90"
                         onClick={()=>{
                             navigate('/about')
@@ -65,9 +65,10 @@ const Home = () => {
 
 
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
-                    <div className="w-full md:pt-16 p-4 md:text-black text-white font-light">
+                    <div className="w-full md:pt-32 p-4 md:text-black text-white font-light">
 
-
+                        <br/>
+                        <br/>
 
                         <div className="md:block hidden">
                             <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
@@ -80,7 +81,7 @@ const Home = () => {
 
 
 
-                        <div className="my-12 font-light font-roboto text-lg md:flex hidden">
+                        <div className="mt-12 font-light font-roboto text-lg md:flex hidden">
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>

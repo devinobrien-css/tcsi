@@ -6,7 +6,6 @@ export const Section = ({className,children,...rest}) => {
     )
 }
 
-
 /** Standard text section for paragraphs
  * @param {React.Component.jsx} children jsx component or string
  * @param {String} className list of additional classes
@@ -15,13 +14,14 @@ export const Section = ({className,children,...rest}) => {
 export const TextSection = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-justify font-roboto ${className}`}
+            className={`text-justify font-roboto text-lg font-light ${className}`}
             {...rest}
         >
             {children}
         </p>
     )
 }
+
 /**
  * @param {*} param0 
  * @returns 
@@ -137,7 +137,7 @@ export const Hyperlink = ({to,children,className,...rest}) => {
     return(
         <a
             href={to}
-            className={`underline bold text-gray-200 hover:text-blue-300 transition-colors px-1 ${className}`}
+            className={`underline bold text-gray-600 cursor-pointer hover:text-blue-400 transition-colors px-1 ${className}`}
             target="_blank"
             rel="noreferrer"
             {...rest}

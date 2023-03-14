@@ -5,8 +5,8 @@ import { Note, Section, SectionHeader, TextSection } from "../components/custom.
  */
 const Research = () => {
     return (
-        <Section className="p-4 md:p-12 md:mt-8 shadow bg-white">
-            <SectionHeader>
+        <Section className="p-4 md:p-24 md:mt-8 shadow bg-white">
+            <SectionHeader className="text-tcsi-blue">
                 Research
             </SectionHeader>
             <TextSection>

@@ -34,19 +34,22 @@ import Home from "./pages/Home.page";
 import Nav from "./components/navigation/Nav";
 import Mission from "./pages/Mision.page";
 import Board from "./pages/Board.page";
+import PolicePanel from "./pages/PanelPolice.page";
+import ArtsPanel from "./pages/PanelArts.page";
+import HealthcarePanel from "./pages/PanelHealthcare.page";
+import PanelMembers from "./pages/PanelMembers.page";
+import EducationPanel from "./pages/PanelEducation.page";
+import Center from "./pages/Center.page";
 
 
 const RenderPage = ({children,type}) => {
     const location = useLocation();
 
     return (
-        <div className={`transition-colors duration-1000 h-screen overflow-y-scroll ${type==="concept"?"bg-cover bg-gradient bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
-            
+        <div className={`transition-colors duration-1000 min-h-screen h-[100%] overflow-y-scroll ${type==="concept"?"bg-cover bg-gradient bg-no-repeat":"bg-concert bg-no-repeat bg-contain bg-tcsi-dark-green"}`}>
             <div className="overflow-hidden">
                 {location.pathname === "/"?<></>:<Nav  type={type}/>}
             </div>
-            {/* <SideNav /> */}
-
             {children}
         </div>
     )
@@ -61,6 +64,11 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
+        path: "/center-home",
+        element: <RenderPage><Center/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
         path: "about",
         element:<RenderPage><About/></RenderPage>,
         children:[
@@ -71,6 +79,33 @@ export const router = createBrowserRouter([
             {
                 path: "/about/board",
                 element: <Board />,
+            }
+        ],
+        errorElement:<Error />,
+    },
+    {
+        path: "panels",
+        element:<RenderPage><Panels/></RenderPage>,
+        children:[
+            {
+                path: "/panels/police",
+                element: <PolicePanel />,
+            },
+            {
+                path: "/panels/arts",
+                element: <ArtsPanel />,
+            },
+            {
+                path: "/panels/education",
+                element: <EducationPanel />,
+            },
+            {
+                path: "/panels/healthcare",
+                element: <HealthcarePanel />,
+            },
+            {
+                path: "/panels/members",
+                element: <PanelMembers />,
             }
         ],
         errorElement:<Error />,

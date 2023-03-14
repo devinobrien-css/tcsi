@@ -7,11 +7,12 @@ const Mission = () => {
     return (
         <>
             
-            <Section className="p-4 md:p-12 md:mt-16 shadow bg-white" >
+            <Section className="p-4 md:p-24 md:mt-8 shadow bg-white" >
                 <SectionHeader className="text-tcsi-lightblue">
                     The Mission of the Center
                 </SectionHeader>
                 <TextSection className="text-black">
+                    <br/>
                     Idea - Mission of the center is to become a research & resource center
                     <br/>
                     <br/>

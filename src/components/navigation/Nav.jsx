@@ -14,7 +14,7 @@ const Nav = ({ type }) => {
 
     const Burger = () => {
         return (
-            <div className={`shadow m-1 bg-white bg-opacity-60 text-gray-700 rounded-lg md:hidden ${modal?'hidden':''}`} onClick={()=>setModal(true)}>
+            <div className={`shadow m-1 bg-white bg-opacity-60 text-gray-700 h-min my-auto rounded-lg md:hidden ${modal?'hidden':''}`} onClick={()=>setModal(true)}>
                 <Icon icon="radix-icons:hamburger-menu" width="50" />
             </div>
         )
