@@ -1,7 +1,5 @@
 import { Icon } from "@iconify/react"
-import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { NavMultiTab, NavTab } from "./NavTab.components"
 
 export const MobileNav = ({open,setOpen}) => {
     const navigate = useNavigate()

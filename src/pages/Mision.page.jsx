@@ -1,4 +1,4 @@
-import { Note, Section, SectionHeader, SectionSubHeader, TextSection } from "../components/custom.library"
+import { Section, SectionHeader, TextSection } from "../components/custom.library"
 
 /**
  * @returns 

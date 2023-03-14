@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
-import { Note, Section, SectionHeader, SectionSubHeader, TextSection } from "../components/custom.library"
+import { Section, SectionHeader, SectionSubHeader, TextSection } from "../components/custom.library"
 
 /**
  * @returns 

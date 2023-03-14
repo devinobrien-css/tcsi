@@ -20,7 +20,7 @@ const Publications = () => {
                     first blog. But then it goes much deeper and well into the larger teaching environment as we will 
                     lay out in this blog. 
                 </TextSection>
-                <a href="http://otherlobe.com/papers/sympathetic-intelligence-in-education/" target="_blank">
+                <a href="http://otherlobe.com/papers/sympathetic-intelligence-in-education/" target="_blank" rel="noreferrer">
                     <Note>
                         Click to read a blog post about the center
                     </Note>
@@ -42,7 +42,7 @@ const Publications = () => {
                     subsequent pieces to explore the nexus between the explicit and implicit components of the brain 
                     and mind, and the role this nexus plays in both how we learn and teach. 
                 </TextSection>
-                <a href="http://otherlobe.com/papers/ninja-the-art-of-the-modern-instructor/" target="_blank">
+                <a href="http://otherlobe.com/papers/ninja-the-art-of-the-modern-instructor/" target="_blank" rel="noreferrer">
                     <Note>
                         Click to read a blog post about NINJA
                     </Note>
@@ -66,7 +66,7 @@ const Publications = () => {
                     Internships for undergraduate students at the college. They quickly realized that they should be 
                     partners in a dual pursuit.
                 </TextSection>
-                <a href="http://otherlobe.com/papers/contributive-pathways/" target="_blank">
+                <a href="http://otherlobe.com/papers/contributive-pathways/" target="_blank" rel="noreferrer">
                     <Note>
                         Cick to read an article on Contributive Pathways
                     </Note>

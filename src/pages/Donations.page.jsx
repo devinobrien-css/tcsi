@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react"
-import { Hyperlink, Note, Section, SectionHeader, TextSection } from "../components/custom.library"
+import { Section, SectionHeader, TextSection } from "../components/custom.library"
 
 /**
  * @returns 
@@ -11,6 +11,7 @@ const Donations = () => {
                 <a 
                     href="https://www.paypal.com/donate/?hosted_button_id=2CEQEM5YVDZ2N&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9kb25hdGUvc2RrL2RvbmF0ZS1zZGsuanMiLCJhdHRycyI6eyJkYXRhLXVpZCI6IjBhZDVkMzA0ZjBfbWRlNm5kbTZuZHEifX0&targetMeta=eyJ6b2lkVmVyc2lvbiI6IjlfMF81OCIsInRhcmdldCI6IkRPTkFURSIsInNka1ZlcnNpb24iOiIwLjguMCJ9"
                     target="_blank"
+                    rel="noreferrer"
                     className="flex shadow-lg border rounded p-2 w-4/5 md:w-1/2 mx-auto hover:scale-105 transform transition-all cursor-pointer"
                     
                 >
