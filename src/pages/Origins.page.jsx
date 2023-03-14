@@ -95,7 +95,7 @@ const Origins = () => {
                         {OriginTwoSVG}
                     </div>
                 </div>
-                <div className="absolute bottom-0 h-min w-full" id="origin-3">
+                <div className="absolute top-full h-min w-full" id="origin-3">
                     {OriginThreeSVG}
                 </div>
             </div> 
