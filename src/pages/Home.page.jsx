@@ -66,10 +66,6 @@ const Home = () => {
 
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
                     <div className="w-full md:pt-32 p-4 md:text-black text-white font-light">
-
-                        <br/>
-                        <br/>
-
                         <div className="md:block hidden">
                             <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
                             <p className="text-4xl">Sympathetic Intelligence</p>
