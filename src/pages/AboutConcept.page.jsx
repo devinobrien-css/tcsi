@@ -60,10 +60,14 @@ const tierData = {
     }
 }
 
+const Blank = ({className}) => {
+    return <div className={`${className}`}></div>
+}
+
 const AboutConcept = () => {
     const navigate = useNavigate()
-    const [tier,setTier] = useState(1)
-    const SectionSVG = tierData[`tier${tier}`].svg
+    const [tier,setTier] = useState()
+    const SectionSVG = tier?Blank:tierData[`tier${tier}`].svg
 
     useEffect(() => {
         gsap.fromTo("#main-svg",{
@@ -97,9 +101,9 @@ const AboutConcept = () => {
                     <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto" id="main-svg">
                         <MainSVG tier={tier} setTier={setTier}/>
                     </div>
-                    <div className="flex md:w-3/5 items-start" id="main-section">
+                    <div className={`flex md:w-3/5 items-start ${tier?'opacity-100':'opacity-0'}`} id="main-section">
                         <SectionSVG className="w-1/12" />
-                        <div className="w-11/12 px-4">
+                        <div className={`w-11/12 px-4 transition-all`}>
                             <SectionHeader className="text-white">
                                 {tierData[`tier${tier}`].title}
                             </SectionHeader>
@@ -107,7 +111,7 @@ const AboutConcept = () => {
                             <TextSection className="text-white">
                                 {tierData[`tier${tier}`].content}
                             </TextSection>
-                            <GroupOfPeople partition={tier}/>
+                            <GroupOfPeople partition={tier} />
                             <RedButton 
                                 className="translate-x-10 -translate-y-20"
                                 onClick={() => {

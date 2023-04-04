@@ -1,6 +1,13 @@
+import { Icon } from "@iconify/react"
+
+/** Standard text section for paragraphs
+ * @param {React.Component.jsx} children jsx component or string
+ * @param {String} className list of additional classes
+ * @returns a paragraph styled text section
+ */
 export const Section = ({className,children,...rest}) => {
     return (
-        <div className={`w-10/12 sm:w-8/12 md:w-1/2 mx-auto my-4 ${className}`} {...rest}>
+        <div className={`w-11/12 sm:w-8/12 md:w-1/2 mx-auto my-4 ${className}`} {...rest}>
             {children}
         </div>
     )
@@ -14,7 +21,7 @@ export const Section = ({className,children,...rest}) => {
 export const TextSection = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-justify font-roboto text-lg font-light ${className}`}
+            className={`text-justify font-roboto text-md font-light ${className}`}
             {...rest}
         >
             {children}
@@ -84,7 +91,7 @@ export const OutlinedHeader = ({children,className,...rest}) => {
     )
 }
 
-/** Standard section header
+/** Standard section sub header
  * @param {React.Component.jsx} children jsx component or string
  * @param {String} className list of additional classes
  * @returns a header component
@@ -92,7 +99,23 @@ export const OutlinedHeader = ({children,className,...rest}) => {
 export const SectionSubHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-2xl font-bold mt-4 font-roboto ${className}`}
+            className={`text-xl font-medium mt-4 font-roboto ${className}`}
+            {...rest}
+        >
+            {children}
+        </p>
+    )
+}
+
+/** Italic sub header
+ * @param {React.Component.jsx} children jsx component or string
+ * @param {String} className list of additional classes
+ * @returns a header component
+ */
+export const ItalicSubHeader = ({children,className,...rest}) => {
+    return (
+        <p 
+            className={`text-md font-light font-roboto ${className}`}
             {...rest}
         >
             {children}
@@ -137,7 +160,27 @@ export const Hyperlink = ({to,children,className,...rest}) => {
     return(
         <a
             href={to}
-            className={`underline bold text-gray-600 cursor-pointer hover:text-blue-400 transition-colors px-1 ${className}`}
+            className={`underline bold text-blue-600 cursor-pointer hover:text-blue-400 transition-colors px-1 ${className}`}
+            target="_blank"
+            rel="noreferrer"
+            {...rest}
+        >
+            {children}
+        </a>
+    )
+}
+
+/** Website link wrapper
+ * @param {React.Component.jsx} children jsx component or string
+ * @param {String} className list of additional classes
+ * @returns a link component
+ */
+export const WebsiteLink = ({to,children,className,...rest}) => {
+    
+    return(
+        <a
+            href={to}
+            className={`${className}`}
             target="_blank"
             rel="noreferrer"
             {...rest}
@@ -158,3 +201,33 @@ export const VideoAdSm = ({className,children,href,embed,...rest}) => {
     )
 }
 
+export const BulletList = ({className,children}) => {
+    return (
+        <ul className={`list-disc w-5/6 mx-auto ${className}`}>
+            {children}
+        </ul>
+    )
+}
+
+export const BulletPoint = ({children}) => {
+    return (
+        <li className="font-roboto font-light">{children}</li>
+    )
+}
+
+
+export const DonationButton = () => {
+    return (
+        <div>
+            <a 
+                href="https://www.paypal.com/donate/?hosted_button_id=2CEQEM5YVDZ2N&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9kb25hdGUvc2RrL2RvbmF0ZS1zZGsuanMiLCJhdHRycyI6eyJkYXRhLXVpZCI6IjBhZDVkMzA0ZjBfbWRlNm5kbTZuZHEifX0&targetMeta=eyJ6b2lkVmVyc2lvbiI6IjlfMF81OCIsInRhcmdldCI6IkRPTkFURSIsInNka1ZlcnNpb24iOiIwLjguMCJ9"
+                target="_blank"
+                rel="noreferrer"
+                className="flex shadow-lg border rounded p-2 w-4/5 md:w-1/2 mx-auto hover:scale-105 transform transition-all cursor-pointer"
+            >
+                <Icon icon="logos:paypal" width="50" className="my-auto"/>
+                <p className="font-light text-lg p-1 text-center">Click here to donate on Paypal</p>
+            </a>
+        </div>
+    )
+}

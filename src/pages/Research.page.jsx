@@ -1,7 +1,7 @@
-import { Note, Section, SectionHeader, TextSection } from "../components/custom.library"
+import { Section, SectionHeader, TextSection } from "../components/custom.library"
 
-/**
- * @returns 
+/** Research page
+ * @returns the sections of the research page
  */
 const Research = () => {
     return (
@@ -9,17 +9,10 @@ const Research = () => {
             <SectionHeader className="text-tcsi-blue">
                 Research
             </SectionHeader>
+            <br/>
             <TextSection>
-                In the spirit of sympathetic intelligence itself, we seek 
-                contributions at the intersetion of SI and your domain. To 
-                contirbute research, please xyz...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui possimus maiores temporibus nemo sapiente? Sint rem voluptatem officiis in tempore laborum vitae, consectetur minima accusamus temporibus mollitia corrupti, et corporis commodi fugiat. Eius nisi odio iste? Eos rem sequi ex, aliquid, laboriosam aut dolores molestias in sapiente perferendis, enim porro!
             </TextSection>
-            <TextSection>
-                {/* <Hyperlink>volunteering</Hyperlink> */}
-            </TextSection>
-            <Note>
-                Here's an example of a note
-            </Note>
         </Section>
     )
 }

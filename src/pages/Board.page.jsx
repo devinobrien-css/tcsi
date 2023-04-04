@@ -14,7 +14,7 @@ const Board = () => {
                     <br/>
                     <p className="font-roboto text-2xl font-light">President & Founder - Robert Hamilton</p>
                     <div className="pt-2">
-                        <img src="/img/robert.jpeg"  className="mx-auto border float-left mr-4 w-1/3" alt="Robert Hamilton"/>
+                        <img src="/img/robert.jpeg"  className="mx-auto border float-left mr-4 w-1/4" alt="Robert Hamilton"/>
                         <p className="">
                             Robert first contemplated the existence of, defined and coined the term Sympathetic 
                             Intelligence in the early 90s as a Musician with The Fat Lady Sings, a well known band 
@@ -43,8 +43,8 @@ const Board = () => {
 
                     <p className="font-roboto text-2xl font-light">Vice President & Founding Member - Professor James R. Stellar</p>
                     <div className="pt-2">
-                        <img src="/img/stellar.jpeg"  className="mx-auto float-left mr-4 w-1/3" alt="Jim Stellar"/>
-                        <p className="">
+                        <img src="/img/stellar.jpeg"  className="mx-auto float-left mr-4 w-1/4" alt="Jim Stellar"/>
+                        <p>
                             As a professor of behavioral neuroscience for forty years first at Harvard University 
                             and then at Northeastern University, Stellar studied the basic neurobiology of 
                             reward/motivational processes with a remarkable group of students in his research 
