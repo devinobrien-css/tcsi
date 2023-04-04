@@ -66,7 +66,7 @@ const Blank = ({className}) => {
 
 const AboutConcept = () => {
     const navigate = useNavigate()
-    const [tier,setTier] = useState()
+    const [tier,setTier] = useState(1)
     const SectionSVG = tier?Blank:tierData[`tier${tier}`].svg
 
     useEffect(() => {
