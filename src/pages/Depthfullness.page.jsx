@@ -36,6 +36,7 @@ extent they will acquire depthfulness and be able to better engage their own cap
 Intelligence. So, concept plus training brings an awareness, which leads to acquired ability and in the
 result, they will be better connected to each moment and better able to influence each moment both
 positively and constructively.
+        
 So, depthlessness is a way of taking control of our capacity for Sympathetic Intelligence - it is a learned,
 disciplined skill unto itself. It brings awareness of the self in the moment BUT, from the perspective of
 the context. While mindfulness means focussing on the self in context, depthfulness means focusing on
@@ -45,6 +46,7 @@ longer just be thinking from the inside out - they will be thinking from the out
 deployed both contemplatively in training and preemptively in day to day operations. Depthfulness helps
 us more appropriately align our Sympathetic Intelligence with the changing circumstances as they unfold from moment to moment, allowing us to connect with each moment in accordance with the specifics of
 each new moment, and the specific context.
+        
 Training for improved Sympathetic Intelligence means studying, contemplating and practicing the
 characteristics of Sympathetic intelligence - understanding the Tiers, the relationship between them and
 the application and operation of all of the parameters outlined above. We believe that the awareness gained and the ability to act on that awareness will empower those who receive the training to use their
