@@ -43,12 +43,7 @@ export const TierOne = () => {
             <br/>
             <OutlinedHeader>mind</OutlinedHeader>
             <TextSection>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas 
-                odit temporibus dolorum dicta cum, itaque repudiandae, vero iure
-                dignissimos atque iste neque voluptates recusandae fugiat 
-                iusto exercitationem ipsam voluptas voluptatibus error eaque 
-                perspiciatis. Velit non aspernatur recusandae voluptas qui 
-                aliquam autem ea commodi ipsam dolore
+                By 'Mind' we mean 'Cognition' or 'Reason'. Each of us has the capacity to contemplate any portion of our existence from a completely rational basis. We can 'Calculate' from a cold determination of the facts in front of us and make predicitions or projections. Again, this is a capacity we have that will help us survive. But, now we also have the capacity for conflict - in other words how do our projections fit with our innate motivators? We are hungry, but does our reason determine that there is a risk involved in making the effort to address our hunger in the circumstances?
             </TextSection>
             <br/>
             <OutlinedHeader>heart</OutlinedHeader>
