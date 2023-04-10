@@ -43,17 +43,12 @@ export const TierOne = () => {
             <br/>
             <OutlinedHeader>mind</OutlinedHeader>
             <TextSection>
-                By 'Mind' we mean 'Cognition' or 'Reason'. Each of us has the capacity to contemplate any portion of our existence from a completely rational basis. We can 'Calculate' from a cold determination of the facts in front of us and make predicitions or projections. Again, this is a capacity we have that will help us survive. But, now we also have the capacity for conflict - in other words how do our projections fit with our innate motivators? We are hungry, but does our reason determine that there is a risk involved in making the effort to address our hunger in the circumstances?
+                By 'Mind' we mean 'Cognition' or 'Reason'. Each of us has the capacity to contemplate any portion of our existence from a completely rational basis. We can 'Calculate' from a cold determination of the facts in front of us and make predicitions or projections. Again, this is a capacity we have that will help us survive. But, now we also have the capacity for conflict - in other words how do our projections fit with our innate motivators? We are hungry, but does our reason determine that there is a risk involved in making the effort to address our hunger in the circumstances? Further still - is the risk worth taking?
             </TextSection>
             <br/>
             <OutlinedHeader>heart</OutlinedHeader>
             <TextSection>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas 
-                odit temporibus dolorum dicta cum, itaque repudiandae, vero iure
-                dignissimos atque iste neque voluptates recusandae fugiat 
-                iusto exercitationem ipsam voluptas voluptatibus error eaque 
-                perspiciatis. Velit non aspernatur recusandae voluptas qui 
-                aliquam autem ea commodi ipsam dolore
+                Pascal famously said - 'The heart has reason of which the mind does not know'. Here we are concerned with our individual emotions, a different set of feelings that have to do with our 'state' of being, or perhaps better stated - our sense of our state of being. Here are some of the primary emotions;- Sadness, Hapiness, Fear, Anger, Disgust, Surprise and Regret. Over the years academics have created an ever and increasingly larger set of 'emotions', each being ever more nuanced and addressing ever more sophisticated forms of feelings.   
             </TextSection>
             <br/>
             <br/>
