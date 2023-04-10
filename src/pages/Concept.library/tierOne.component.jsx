@@ -38,12 +38,7 @@ export const TierOne = () => {
             <br/>
             <OutlinedHeader>gut</OutlinedHeader>
             <TextSection>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas 
-                odit temporibus dolorum dicta cum, itaque repudiandae, vero iure
-                dignissimos atque iste neque voluptates recusandae fugiat 
-                iusto exercitationem ipsam voluptas voluptatibus error eaque 
-                perspiciatis. Velit non aspernatur recusandae voluptas qui 
-                aliquam autem ea commodi ipsam dolore
+                By 'Gut' of course we mean 'Instinct'. Each of us has innate and primal motivators that are designed to cause us to interpret and then react according to 'programmed' responses. For example, we feel hungry, or we feel tired. In either case we react by taking action. We eat, or we go to bed. There is a huge variety of instincts, all designed to help each of us to succeed, but here too we have a motivator that his designed to help the species succeed. This is very important as it establishes a key distinguisher between Symathetic Intelligence, and other 'intelligences'. SI is not just about 'you' - it is also about 'Us'!!
             </TextSection>
             <br/>
             <OutlinedHeader>mind</OutlinedHeader>
