@@ -1,8 +1,14 @@
 import { useState } from "react"
 
-export const MainSVG = ({tier,setTier}) => {
+export const MainSVG = ({tier,setTier,setHover}) => {
 
     const [title,setTitle] = useState("Explore")
+
+    function setClick(current) {
+        setTier(current)
+        setHover()
+    }
+    
 
     return (
         <>
@@ -21,7 +27,7 @@ export const MainSVG = ({tier,setTier}) => {
                 </g>
                 
                 <g transform="translate(250,250)">
-                    <g onClick={() => setTier(3)}>
+                    <g onClick={() => setClick(3)} onMouseEnter={()=>setHover(3)} onMouseLeave={()=>setHover()}>
                         <g className="group" onMouseEnter={() => setTitle('work')}>
                             <circle fill="#390052" r="204.54545454545453" className={`stroke-1 stroke-white transition-all group-hover:opacity-100 ${tier===3?'opacity-100':'opacity-40'}`}></circle>
                             <g transform="translate(102.27272727272724,-177.1415598649988)">
@@ -131,7 +137,7 @@ export const MainSVG = ({tier,setTier}) => {
                             </g>
                         </g>
                     </g>
-                    <g onClick={() => setTier(2)}>
+                    <g onClick={() => setClick(2)} onMouseEnter={()=>setHover(2)} onMouseLeave={()=>setHover()}>
                         <g className="group" onMouseEnter={() => setTitle('bond')}>
                             <circle fill="#a4df53" r="136.36363636363635" className={`stroke-1 stroke-white transition-all group-hover:opacity-100 ${tier===2?'opacity-100':'opacity-40'}`}></circle>
                             <g transform="translate(68.18181818181816,-118.09437324333254)">
@@ -242,7 +248,7 @@ export const MainSVG = ({tier,setTier}) => {
                             </g>
                         </g>
                     </g>
-                    <g onClick={() => setTier(1)}>
+                    <g onClick={() => setClick(1)} onMouseEnter={()=>setHover(1)} onMouseLeave={()=>setHover()}>
                         <g className="group" onMouseEnter={() => setTitle('emotion')}>
                             <circle fill="#fee201" r="68.18181818181817" className={`stroke-1 stroke-white transition-all group-hover:opacity-100 ${tier===1?'opacity-100':'opacity-40'}`}></circle>
                             <g transform="translate(34.09090909090908,-59.04718662166627)">

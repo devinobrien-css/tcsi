@@ -4,7 +4,17 @@ import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../compon
 import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
 import gsap from 'gsap'
+
+const Blank = ({className}) => {
+    return <div className={`${className}`}></div>
+}
+
 const tierData = {
+    tier0:{
+        svg:Blank,
+        title:'',
+        content:<> </>
+    },
     tier1:{
         svg:Tier1,
         title:'Tier 1 - Intrapersonal/Within',
@@ -60,14 +70,15 @@ const tierData = {
     }
 }
 
-const Blank = ({className}) => {
-    return <div className={`${className}`}></div>
-}
+
 
 const AboutConcept = () => {
     const navigate = useNavigate()
-    const [tier,setTier] = useState(1)
+    const [tier,setTier] = useState(0)
+    const [hover,setHover] = useState()
     const SectionSVG = tier?Blank:tierData[`tier${tier}`].svg
+
+    const getTier = () => hover?hover:tier
 
     useEffect(() => {
         gsap.fromTo("#main-svg",{
@@ -99,26 +110,30 @@ const AboutConcept = () => {
                 </OutlinedHeader>
                 <div className="md:flex py-8">
                     <div className="md:w-1/2 -translate-x-10 md:mx-0 mx-auto" id="main-svg">
-                        <MainSVG tier={tier} setTier={setTier}/>
+                        <MainSVG tier={getTier()} setTier={setTier} setHover={setHover}/>
                     </div>
-                    <div className={`flex md:w-3/5 items-start ${tier?'opacity-100':'opacity-0'}`} id="main-section">
+                    <div className={`flex md:w-3/5 items-start ${getTier()?'opacity-100':'opacity-0'}`} id="main-section">
                         <SectionSVG className="w-1/12" />
-                        <div className={`w-11/12 px-4 transition-all`}>
-                            <SectionHeader className="text-white">
-                                {tierData[`tier${tier}`].title}
-                            </SectionHeader>
-                            <br/>
-                            <TextSection className="text-white">
-                                {tierData[`tier${tier}`].content}
-                            </TextSection>
-                            <GroupOfPeople partition={tier} />
-                            <RedButton 
-                                className="translate-x-10 -translate-y-20"
-                                onClick={() => {
-                                    navigate(`/concept/tier${tier}`)
-                                }}
-                            >Learn More</RedButton>
-                        </div>
+                            <div className={`w-11/12 px-4 transition-all`}>
+                                <SectionHeader className="text-white">
+                                    {tierData[`tier${getTier()}`].title}
+                                </SectionHeader>
+                                <br/>
+                                <TextSection className="text-white">
+                                    {tierData[`tier${getTier()}`].content}
+                                </TextSection>
+                                {getTier()?(
+                                    <>
+                                        <GroupOfPeople partition={getTier()} />
+                                        <RedButton 
+                                            className="translate-x-10 -translate-y-20"
+                                            onClick={() => {
+                                                navigate(`/concept/tier${getTier()}`)
+                                            }}
+                                        >Learn More</RedButton>
+                                    </>
+                                ):(<></>)}
+                            </div>
                     </div>
                 </div>
             </div>
