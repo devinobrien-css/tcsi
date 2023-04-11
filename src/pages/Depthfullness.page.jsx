@@ -28,7 +28,7 @@ Depthfulness is an approach that we are developing here at the Center to overcom
 <br/> 
 <br/>
 What is Depthulness
-Depthfulness, is the acquisition and application of an optimized Sympathetic Intelligence. Depthfulness is two things - First, it is a concept, and Second it is an acquired ability. 
+Depthfulness is the Individual's awareness of and for Sympathetic Intelligence and all of its Tiers. Depthfulness, is the acquisition and application of an individual's optimized Sympathetic Intelligence. Therefore it is an ability that can be acquired.
  
 The purpose behind training in Sympathetic Intelligence is to acquire Depthfulness through understanding Sympathetic Intelligence. That is because the concept of Depthfulness is found in the structure of Sympathetic Intelligence and the manner in which our individual mechanisms interface with that framework. 
  
