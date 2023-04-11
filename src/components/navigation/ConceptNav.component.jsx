@@ -21,7 +21,7 @@ const exploreMultiTab = [
         path:"/depthfullness"
     },
     {
-        title:"Socio-Neurological",
+        title:"Socio-Neurology",
         path:"/socio-neurological"
     },
     {
