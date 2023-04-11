@@ -42,8 +42,8 @@ So, Depthfulness Training is a way to facilitate the individual taking control o
  
 We find that a useful way to understand Depthfulness is to compare or relate it to Mindfulness. For the purposes of this comparison, Mindfulness means focusing on the self in context, while Depthfulness means focusing on the context with the self in it. Mindfulness is a passive acceptance of the current circumstances, while Depthfulness is an active and willful engagement with the context. Professionals and others who develop it, will no longer just be thinking from the inside out - they will also be thinking from the outside in. 
  
-Depthfulness is deployed both contemplatively in training and preemptively in day to day operations. Depthfulness helps us more appropriately align our Sympathetic Intelligence with the changing circumstances as they unfold from moment to moment, allowing us to connect with each moment in accordance with the specifics of each new moment, and the specific context.        
- 
+Depthfulness is deployed both contemplatively in training and preemptively in day to day operations. Depthfulness helps us more appropriately align our Sympathetic Intelligence with the changing circumstances as they unfold from moment to moment, allowing us to connect with each moment in accordance with the specifics of each new moment, and the specific context.
+        
 Training for improved Sympathetic Intelligence means studying, contemplating and practicing the characteristics of Sympathetic intelligence - understanding the Tiers, the relationship between them and the application and operation of all of the parameters outlined above. 
  
 We believe that the awareness gained and the ability to act on that awareness will empower those who receive the training to use their sympathetic intelligence to greater effect in delivering on their promise to serve and protect their community. 
