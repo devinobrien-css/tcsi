@@ -35,7 +35,7 @@ to the extent any individual can contemplate, become aware of and embrace the co
 extent they will acquire depthfulness and be able to better engage their own capacity for Sympathetic
 Intelligence. So, concept plus training brings an awareness, which leads to acquired ability and in the
 result, they will be better connected to each moment and better able to influence each moment both
-positively and constructively.<\P>
+positively and constructively.</P>
         
 So, depthlessness is a way of taking control of our capacity for Sympathetic Intelligence - it is a learned,
 disciplined skill unto itself. It brings awareness of the self in the moment BUT, from the perspective of
