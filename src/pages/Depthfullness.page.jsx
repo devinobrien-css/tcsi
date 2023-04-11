@@ -19,7 +19,7 @@ const Depthfullness = () => {
                 Depthfullness
             </SectionHeader>
             <TextSection  >
-Application of Sympathetic Intelligence
+The Application of Sympathetic Intelligence
 <br/> 
 <br/>
 Sympathetic Intelligence is an indelible part of who we are and how we behave. We all have the capacity for Sympathetic Intelligence and its presence is ubiquitous. However, perhaps because Sympathetic Intelligence is so much a part of who we are and how we are, exercising Sympathetic Intelligence consciously or deliberately presents as a challenge.
