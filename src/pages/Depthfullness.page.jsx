@@ -20,7 +20,7 @@ const Depthfullness = () => {
             </SectionHeader>
             <TextSection  >
                 Depthfulness
-As should be clear from all of the above - Sympathetic Intelligence is an indelible part of who we are and
+<P> As should be clear from all of the above - Sympathetic Intelligence is an indelible part of who we are and
 how we behave. We all have the capacity for Sympathetic Intelligence and Its presence is ubiquitous.
 However, what should also be clear from our enumeration of the various parameters above - exercising
 Sympathetic Intelligence is a challenge.
@@ -35,7 +35,7 @@ to the extent any individual can contemplate, become aware of and embrace the co
 extent they will acquire depthfulness and be able to better engage their own capacity for Sympathetic
 Intelligence. So, concept plus training brings an awareness, which leads to acquired ability and in the
 result, they will be better connected to each moment and better able to influence each moment both
-positively and constructively.
+positively and constructively.<\P>
         
 So, depthlessness is a way of taking control of our capacity for Sympathetic Intelligence - it is a learned,
 disciplined skill unto itself. It brings awareness of the self in the moment BUT, from the perspective of
