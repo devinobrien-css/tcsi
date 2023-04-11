@@ -33,29 +33,17 @@ export const TierThree = () => {
             <br/>
             <OutlinedHeader>live</OutlinedHeader>
             <TextSection>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Voluptatem officiis quas tempore nisi a ullam esse eligendi 
-                repellat quod, optio dicta dolores delectus aperiam et eaque, 
-                molestias qui corrupti unde pariatur blanditiis laboriosam 
-                temporibus, animi maxime. Quam quos nobis dolor ratione quia. 
+                This can be thought of as the social element of these three tiers. We are born into a family and it is here that we first learn the skills of mixing with people and forming bonds. This is our close knit relationships - our 'kinship' as it were. Here we have family, friends and eventually we meet our spouse and grow our own family. 
             </TextSection>
             <br/>
             <OutlinedHeader>learn</OutlinedHeader>
             <TextSection>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Voluptatem officiis quas tempore nisi a ullam esse eligendi 
-                repellat quod, optio dicta dolores delectus aperiam et eaque, 
-                molestias qui corrupti unde pariatur blanditiis laboriosam 
-                temporibus, animi maxime. Quam quos nobis dolor ratione quia. 
+                This is where we learn to adapt to the more external element of our social existence. Here we learn our culture and accepted norms. 
             </TextSection>
             <br/>
             <OutlinedHeader>work</OutlinedHeader>
             <TextSection>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Voluptatem officiis quas tempore nisi a ullam esse eligendi 
-                repellat quod, optio dicta dolores delectus aperiam et eaque, 
-                molestias qui corrupti unde pariatur blanditiis laboriosam 
-                temporibus, animi maxime. Quam quos nobis dolor ratione quia. 
+                We build on what we have developped in the two other tiers to engage and integrate as fully as possible with our work environment. 
             </TextSection>
             <br/>
             <br/>
