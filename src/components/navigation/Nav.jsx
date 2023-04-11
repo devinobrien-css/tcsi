@@ -24,18 +24,24 @@ const Nav = ({ type }) => {
         <>
             <MobileNav open={modal} setOpen={setModal}/>
             <div className={`z-[499]  ${type==='concept'?'backdrop-blur-md':'bg-white'} justify-between shadow-lg fixed right-0  transition-all duration-2500 w-full`}>
-                <div className="bg-black flex justify-end p-1">
+                <div className="bg-black flex justify-between p-2">
                     <p 
-                        className="text-white underline font-light cursor-pointer"
-                        onClick={() => type==='concept'?navigate('/about'):navigate('/about-concept')}
+                        className={` underline font-light cursor-pointer ${type==='concept'?'text-white':'text-gray-400'}`}
+                        onClick={() => type==='concept'?navigate('/about'):null}
                     >        
-                        {type==='concept'?'Visit the Center for SI':'Explore the Concept of SI'}
+                        Visit the Center for SI
                     </p>
                     <Icon 
                         icon="fa-solid:home" 
                         className="shrink-0 text-white my-auto mx-3 cursor-pointer" 
                         onClick={() => navigate('/')}
                     />
+                    <p 
+                        className={`text-white underline font-light cursor-pointer ${type==='concept'?'text-gray-400':'text-white'}`}
+                        onClick={() => type==='concept'?null:navigate('/about-concept')}
+                    >        
+                        Explore the Concept of SI
+                    </p>
                 </div>
 
                 <div>
