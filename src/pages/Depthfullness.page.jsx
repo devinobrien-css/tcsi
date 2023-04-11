@@ -19,7 +19,9 @@ const Depthfullness = () => {
                 Depthfullness
             </SectionHeader>
             <TextSection  >
-                Application of Sympathetic Intelligence
+Application of Sympathetic Intelligence
+<br/> 
+<br/>
 Sympathetic Intelligence is an indelible part of who we are and how we behave. We all have the capacity for Sympathetic Intelligence and its presence is ubiquitous. However, perhaps because Sympathetic Intelligence is so much a part of who we are and how we are, exercising Sympathetic Intelligence consciously or deliberately presents as a challenge.
  
 Depthfulness is an approach that we are developing here at the Center to overcome that challenge. The goal is to create a means and capacity so that individuals may be able to bring their natural Sympathetic Intelligence into their daily lives in a manner that will have greater effect, and bring greater benefit to all whom they come into contact with. We believe that if we can deliver this refined human ability to bear in professional environments we can bring an immediate benefit to all of our lives. This is why at the outset we have created three core panels:- Education, Healthcare and Policing.
