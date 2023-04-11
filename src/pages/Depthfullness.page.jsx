@@ -34,7 +34,6 @@ The purpose behind training in Sympathetic Intelligence is to acquire Depthfulne
  
 At the Center for Sympathetic Intelligence, we believe that to the extent any individual can contemplate, become aware of and embrace the concept of Sympathetic Intelligence, then to that extent they will acquire Depthfulness and be able to better engage their own capacity for Sympathetic Intelligence. 
 <br/> 
-<br/> 
 What is Depthulness Training<br/>
 Stated simply, training brings an awareness, which leads to an acquired ability and in the result, each individual will be better connected to each moment and better able to influence each moment both positively and constructively.
  
