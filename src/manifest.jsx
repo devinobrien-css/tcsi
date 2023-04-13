@@ -40,6 +40,7 @@ import HealthcarePanel from "./pages/PanelHealthcare.page";
 import PanelMembers from "./pages/PanelMembers.page";
 import EducationPanel from "./pages/PanelEducation.page";
 import Center from "./pages/Center.page";
+import Examples from "./pages/Examples.page";
 
 
 const RenderPage = ({children,type}) => {
@@ -152,6 +153,11 @@ export const router = createBrowserRouter([
     {
         path: "Depthfullness",
         element:<RenderPage type="concept"><Depthfullness/></RenderPage>,
+        errorElement:<Error />,
+    },
+    {
+        path: "Examples",
+        element:<RenderPage type="concept"><Examples/></RenderPage>,
         errorElement:<Error />,
     },
     {

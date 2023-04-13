@@ -115,7 +115,7 @@ export const SectionSubHeader = ({children,className,...rest}) => {
 export const ItalicSubHeader = ({children,className,...rest}) => {
     return (
         <p 
-            className={`text-md font-light font-roboto ${className}`}
+            className={`text-md font-light font-roboto italic ${className}`}
             {...rest}
         >
             {children}
