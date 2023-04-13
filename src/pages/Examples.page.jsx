@@ -27,7 +27,7 @@ const Examples = () => {
             </WebsiteLink>
             <br/>
 
-            <TextSection>To make a table, we use the BulletList and BulletPoint components</TextSection>
+            <TextSection>To make a bullet point list, we use the BulletList and BulletPoint components</TextSection>
             <BulletList>
                 <BulletPoint>Item 1</BulletPoint>
                 <BulletPoint>Item 2</BulletPoint>
