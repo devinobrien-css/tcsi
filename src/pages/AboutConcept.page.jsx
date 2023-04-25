@@ -125,12 +125,12 @@ const AboutConcept = () => {
                                 {getTier()?(
                                     <>
                                         <GroupOfPeople partition={getTier()} />
-                                        <RedButton 
+                                        {/* <RedButton 
                                             className="translate-x-10 -translate-y-20"
                                             onClick={() => {
                                                 navigate(`/concept/tier${getTier()}`)
                                             }}
-                                        >Learn More</RedButton>
+                                        >Learn More</RedButton> */}
                                     </>
                                 ):(<></>)}
                             </div>

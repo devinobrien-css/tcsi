@@ -43,7 +43,7 @@ export const ConceptNav = ({Burger}) => {
                 <NavMultiTab path="/concept" title="the tiers" tabs={experimentsMultiTab}/>
                 <div className="w-[4em]"></div>
                 <div className="w-[4em] border-l"></div>
-                <NavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab}/>
+                <NavMultiTab path="/depthfullness" title="Elements" tabs={exploreMultiTab}/>
                 <NavTab path="/applications" title="applications" />
                 <NavTab path="/videos" title="videos" />
                 <NavTab path="/experience" title="experience SI" />
