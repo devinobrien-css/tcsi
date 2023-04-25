@@ -741,10 +741,6 @@ video {
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .hidden {
   display: none;
 }
@@ -865,6 +861,10 @@ video {
 .w-max {
   width: -webkit-max-content;
   width: max-content;
+}
+
+.w-\[4em\] {
+  width: 4em;
 }
 
 .min-w-full {
@@ -1038,6 +1038,10 @@ video {
 
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-tcsi-dark-green {

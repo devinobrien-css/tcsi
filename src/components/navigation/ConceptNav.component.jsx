@@ -40,7 +40,9 @@ export const ConceptNav = ({Burger}) => {
             <nav className={`text-gray-700 text-lg justify-end transition-all duration-1400 md:flex hidden`}>
                 <NavTab path="/about-concept" title="about" />
                 <NavTab path="/origins" title="origins" />
-                <NavMultiTab path="/concept" title="concept" tabs={experimentsMultiTab}/>
+                <NavMultiTab path="/concept" title="the tiers" tabs={experimentsMultiTab}/>
+                <div className="w-[4em]"></div>
+                <div className="w-[4em] border-l"></div>
                 <NavMultiTab path="/depthfullness" title="Explore" tabs={exploreMultiTab}/>
                 <NavTab path="/applications" title="applications" />
                 <NavTab path="/videos" title="videos" />

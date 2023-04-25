@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export const MainSVG = ({tier,setTier,setHover}) => {
-
+    const navigate = useNavigate()
     const [title,setTitle] = useState("Explore")
 
     function setClick(current) {
+        navigate(`/concept/tier${tier}`);
         setTier(current)
         setHover()
     }
