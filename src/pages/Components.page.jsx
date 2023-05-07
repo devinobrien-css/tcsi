@@ -19,12 +19,15 @@ const Components = () => {
                 Components
             </SectionHeader>
             <TextSection  >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Iure dolorem nemo cum consequuntur, incidunt vero odio harum 
-                voluptates qui, totam debitis cupiditate repellat! Obcaecati 
-                iusto, beatae ab esse ipsam perferendis, modi unde architecto 
-                fugit quo ipsum temporibus atque, nesciunt saepe officiis in 
-                eum sint deleniti.
+●	Depthfulness
+●	Perspective Deficit
+●	Agency
+●	Presence and Reflections
+●	Reflective Spontaneity
+●	Revisable Inference
+●	Countering (Disarming)
+●	Subliminal Exposition
+●	Processification
             </TextSection>
         </Section>
     )
