@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
+import { OutlinedHeader, SectionHeader, TextSection } from "../components/custom.library"
 import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
 import gsap from 'gsap'
@@ -73,7 +73,6 @@ const tierData = {
 
 
 const AboutConcept = () => {
-    const navigate = useNavigate()
     const [tier,setTier] = useState(0)
     const [hover,setHover] = useState()
     const SectionSVG = tier?Blank:tierData[`tier${tier}`].svg

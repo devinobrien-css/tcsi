@@ -1,20 +1,5 @@
 import { NavMultiTab, NavTab } from "./NavTab.components"
 
-const experimentsMultiTab = [
-    {
-        title:"Tier 1",
-        path:"/concept/tier1"
-    },
-    {
-        title:"Tier 2",
-        path:"/concept/tier2"
-    },
-    {
-        title:"Tier 3",
-        path:"/concept/tier3"
-    }
-]
-
 const exploreMultiTab = [
     {
         title:"Depthfullness",

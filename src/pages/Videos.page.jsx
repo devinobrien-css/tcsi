@@ -1,6 +1,6 @@
 import gsap from "gsap"
 import { useEffect } from "react"
-import { Section, SectionHeader, TextSection, VideoAdSm } from "../components/custom.library"
+import { Section, SectionHeader, VideoAdSm } from "../components/custom.library"
 
 
 const Videos = () => {
