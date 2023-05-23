@@ -13,10 +13,9 @@ const Videos = () => {
         })
         .then(() => {
             gsap.fromTo("#video",{
-                opacity:1,
-                scale:0
+                opacity:0,
             },{
-                scale:1
+                opacity:1,
             })
         })
     },[])
@@ -26,14 +25,6 @@ const Videos = () => {
             <SectionHeader>
                 Videos
             </SectionHeader>
-            <TextSection>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Iure dolorem nemo cum consequuntur, incidunt vero odio harum 
-                voluptates qui, totam debitis cupiditate repellat! Obcaecati 
-                iusto, beatae ab esse ipsam perferendis, modi unde architecto 
-                fugit quo ipsum temporibus atque, nesciunt saepe officiis in 
-                eum sint deleniti.
-            </TextSection>
             <div className="md:flex justify-between my-2" >
                 <VideoAdSm className="md:w-[48%]" href="https://youtu.be/NmiwAV9i5cY" embed="https://youtube.com/embed/NmiwAV9i5cY" id="video">
                     What do we mean by "Sympathy"?

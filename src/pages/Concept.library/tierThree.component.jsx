@@ -1,6 +1,6 @@
 import gsap from "gsap"
 import { useEffect } from "react"
-import { OutlinedHeader, SectionHeader, TextSection } from "../../components/custom.library"
+import { ExpandableTextSection, OutlinedHeader, SectionHeader, TextSection } from "../../components/custom.library"
 
 
 
@@ -32,19 +32,19 @@ export const TierThree = () => {
             </TextSection>
             <br/>
             <OutlinedHeader>live</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 This can be thought of as the social element of these three tiers. We are born into a family and it is here that we first learn the skills of mixing with people and forming bonds. This is our close knit relationships - our 'kinship' as it were. Here we have family, friends and eventually we meet our spouse and grow our own family. 
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <OutlinedHeader>learn</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 This is where we learn to adapt to the more external element of our social existence. Here we learn our culture and accepted norms. 
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <OutlinedHeader>work</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 We build on what we have developped in the two other tiers to engage and integrate as fully as possible with our work environment. 
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <br/>
         </div>

@@ -619,6 +619,26 @@ video {
   top: 105%;
 }
 
+.right-6 {
+  right: 1.5rem;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-1\/4 {
+  left: 25%;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -772,6 +792,18 @@ video {
   height: 0%;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -850,6 +882,10 @@ video {
   width: 50%;
 }
 
+.w-\[4em\] {
+  width: 4em;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -861,10 +897,6 @@ video {
 .w-max {
   width: -webkit-max-content;
   width: max-content;
-}
-
-.w-\[4em\] {
-  width: 4em;
 }
 
 .min-w-full {
@@ -921,6 +953,12 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-90 {
+  --tw-rotate: 90deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-0 {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -955,6 +993,10 @@ video {
   list-style-type: disc;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -967,8 +1009,16 @@ video {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -1036,12 +1086,12 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-l {
   border-left-width: 1px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .border-tcsi-dark-green {
@@ -2290,6 +2340,14 @@ video {
   padding-right: 0.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2408,6 +2466,11 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-tcsi-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(254 226 1 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2700,6 +2763,10 @@ video {
 
   .md\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .md\:pt-28 {
+    padding-top: 7rem;
   }
 
   .md\:text-left {

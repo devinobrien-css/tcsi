@@ -24,12 +24,13 @@ const Nav = ({ type }) => {
         <>
             <MobileNav open={modal} setOpen={setModal}/>
             <div className={`z-[499]  ${type==='concept'?'backdrop-blur-md':'bg-white'} justify-between shadow-lg fixed right-0  transition-all duration-2500 w-full`}>
-                <div className="bg-black flex justify-between p-2">
+                <div className="bg-black flex justify-center p-2">
                     <p 
-                        className={` underline font-light cursor-pointer ${type==='concept'?'text-white':'text-gray-400'}`}
+                        className={` underline font-light cursor-pointer flex ${type==='concept'?'text-white':'text-gray-400'}`}
                         onClick={() => type==='concept'?navigate('/about'):null}
-                    >        
-                        Visit the Center for SI
+                    >       
+                        <Icon icon="bx:left-arrow" className="my-auto block"/> 
+                        <span className="my-auto">Visit the Center for SI</span>
                     </p>
                     <Icon 
                         icon="fa-solid:home" 
@@ -37,10 +38,11 @@ const Nav = ({ type }) => {
                         onClick={() => navigate('/')}
                     />
                     <p 
-                        className={`text-white underline font-light cursor-pointer ${type==='concept'?'text-gray-400':'text-white'}`}
+                        className={`text-white underline font-light cursor-pointer flex ${type==='concept'?'text-gray-400':'text-white'}`}
                         onClick={() => type==='concept'?null:navigate('/about-concept')}
                     >        
-                        Explore the Concept of SI
+                        <span className="my-auto">Explore the Concept of SI</span>
+                        <Icon icon="bx:left-arrow" className="my-auto block rotate-180"/> 
                     </p>
                 </div>
 

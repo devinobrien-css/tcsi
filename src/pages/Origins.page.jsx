@@ -44,7 +44,7 @@ const Origins = () => {
     },[])
 
     return (
-            <div className="h-full relative">
+            <div className="min-h-screen relative">
                 <div className="md:flex h-min">
                     <div className="flex justify-between md:mt-0 mt-10 md:w-3/12">
                         <div className="my-auto w-4/12 md:w-full" id="origin-1">
@@ -95,7 +95,7 @@ const Origins = () => {
                         {OriginTwoSVG}
                     </div>
                 </div>
-                <div className="absolute top-full h-min w-full" id="origin-3">
+                <div className="absolute bottom-0 h-min w-full" id="origin-3">
                     {OriginThreeSVG}
                 </div>
             </div> 

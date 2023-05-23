@@ -12,7 +12,7 @@ const Blank = ({className}) => {
 const tierData = {
     tier0:{
         svg:Blank,
-        title:'Hover over the circles to read about the tiers. Click on one to explore more!',
+        title:'Hover over the graphic to find out more about the tiers. Then click on any tier to learn more about that tier!',
         content:<> </>
     },
     tier1:{
@@ -125,12 +125,6 @@ const AboutConcept = () => {
                                 {getTier()?(
                                     <>
                                         <GroupOfPeople partition={getTier()} />
-                                        {/* <RedButton 
-                                            className="translate-x-10 -translate-y-20"
-                                            onClick={() => {
-                                                navigate(`/concept/tier${getTier()}`)
-                                            }}
-                                        >Learn More</RedButton> */}
                                     </>
                                 ):(<></>)}
                             </div>
@@ -141,3 +135,11 @@ const AboutConcept = () => {
     )
 }
 export default AboutConcept
+
+
+/* <RedButton 
+className="translate-x-10 -translate-y-20"
+onClick={() => {
+    navigate(`/concept/tier${getTier()}`)
+}}
+>Learn More</RedButton> */

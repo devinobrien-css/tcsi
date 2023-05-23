@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className="bg-white md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 md:my-6 ">
+                    <div className="bg-white bg-opacity-20 md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 md:my-6 ">
                         <Icon 
                             icon="gg:play-button" 
                             className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-green" 
@@ -41,14 +41,14 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="flex-wrap justify-evenly w-10/12 text-lg font-light font-roboto [&>*]:mx-1 mx-auto md:flex hidden">
+                    {/* <div className="flex-wrap justify-evenly w-10/12 text-lg font-light font-roboto [&>*]:mx-1 mx-auto md:flex hidden">
                         <p>About Us</p>
                         <p>Our Mission</p>
                         <p>Panels</p>
                         <p>Publications</p>
                         <p>Donate</p>
                         <p>Contact</p>
-                    </div>
+                    </div> */}
 
                     <Icon 
                         icon="gg:play-button" 
@@ -65,7 +65,7 @@ const Home = () => {
 
 
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
-                    <div className="w-full md:pt-24 p-4 md:text-black text-white font-light">
+                    <div className="w-full md:pt-28 p-4 md:text-black text-white font-light">
                         <div className="md:block hidden">
                             <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
                             <p className="text-4xl">Sympathetic Intelligence</p>
@@ -75,15 +75,15 @@ const Home = () => {
                             <p className="text-3xl">Explore the concept of Sympathetic Intelligence</p>
                         </div>
 
+                        <br/>
 
-
-                        <div className="mt-12 font-light font-roboto text-lg md:flex hidden">
+                        {/* <div className="mt-12 font-light font-roboto text-lg md:flex hidden">
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/videos')}>Videos</p>
                             <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/experiments')}>Experiments</p>
-                        </div>
+                        </div> */}
 
                         <Icon 
                             icon="gg:play-button" 

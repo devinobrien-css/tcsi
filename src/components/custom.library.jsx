@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import { useState } from "react"
 
 /** Standard text section for paragraphs
  * @param {React.Component.jsx} children jsx component or string
@@ -28,6 +29,23 @@ export const TextSection = ({children,className,...rest}) => {
         </p>
     )
 }
+
+export const ExpandableTextSection = ({children,className,...rest}) => {
+    const [open,setOpen] = useState(false)
+    return (
+        <p 
+            onClick={()=>open?setOpen():setOpen(true)}
+            className={`text-justify font-roboto text-md font-light flex flex-col ${className}`}
+            {...rest}
+        >
+            <span className={`transition-all transform ${open ? 'h-32' : 'h-0 overflow-clip'}`}>
+                {children}
+            </span>
+            <span className={`cursor-pointer text-tcsi-yellow`}>{open ? 'click to read less...' : 'click to read more...'}</span>
+        </p>
+    )
+}
+
 
 /**
  * @param {*} param0 
