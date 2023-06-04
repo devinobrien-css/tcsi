@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
-import { OutlinedHeader, RedButton, SectionHeader, TextSection } from "../components/custom.library"
+import { OutlinedHeader, SectionHeader, TextSection } from "../components/custom.library"
 import { GroupOfPeople, MainSVG } from "../resources/svg/homeSVG.library"
 import { Tier1, Tier2, Tier3 } from "../resources/svg/tierSVG.library"
 import gsap from 'gsap'
@@ -12,7 +11,7 @@ const Blank = ({className}) => {
 const tierData = {
     tier0:{
         svg:Blank,
-        title:'Hover over the circles to read about the tiers. Click on one to explore more!',
+        title:'Hover over the graphic to find out more about the tiers. Then click on any tier to learn more about that tier!',
         content:<> </>
     },
     tier1:{
@@ -73,7 +72,6 @@ const tierData = {
 
 
 const AboutConcept = () => {
-    const navigate = useNavigate()
     const [tier,setTier] = useState(0)
     const [hover,setHover] = useState()
     const SectionSVG = tier?Blank:tierData[`tier${tier}`].svg
@@ -125,12 +123,6 @@ const AboutConcept = () => {
                                 {getTier()?(
                                     <>
                                         <GroupOfPeople partition={getTier()} />
-                                        {/* <RedButton 
-                                            className="translate-x-10 -translate-y-20"
-                                            onClick={() => {
-                                                navigate(`/concept/tier${getTier()}`)
-                                            }}
-                                        >Learn More</RedButton> */}
                                     </>
                                 ):(<></>)}
                             </div>
@@ -141,3 +133,11 @@ const AboutConcept = () => {
     )
 }
 export default AboutConcept
+
+
+/* <RedButton 
+className="translate-x-10 -translate-y-20"
+onClick={() => {
+    navigate(`/concept/tier${getTier()}`)
+}}
+>Learn More</RedButton> */

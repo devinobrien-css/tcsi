@@ -34,7 +34,7 @@ const Applications = () => {
                 Applications
             </SectionHeader>
             <TextSection>
-                As we learn more about the phenomenon of sympathetic intelligence, we realize that the possibilities for its application are simply endless. There is simply no part of the human existence that does not involve sympathetic intelligence to at least some degree, however small.
+                As Robert learns more about the phenomenon of sympathetic intelligence, we realize that the possibilities for its application are simply endless. There is simply no part of the human existence that does not involve sympathetic intelligence to at least some degree, however small.
 
 Also, at the center for sympathetic intelligence we have realized that the introduction of the concept will take time to develop and we believe it's application is more about optimizing and understanding the presence that it already has in our lives. In other words the more informed we are about it the more likely we are able to apply it in a constructive and more contributive manner.
 

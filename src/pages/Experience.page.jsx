@@ -10,12 +10,8 @@ const Experience = () => {
                 Experience SI
             </SectionHeader>
             <TextSection  >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Iure dolorem nemo cum consequuntur, incidunt vero odio harum 
-                voluptates qui, totam debitis cupiditate repellat! Obcaecati 
-                iusto, beatae ab esse ipsam perferendis, modi unde architecto 
-                fugit quo ipsum temporibus atque, nesciunt saepe officiis in 
-                eum sint deleniti.
+                The proof, they often say, is in the pudding. Here we will create content that will enable the user to experience sympathetic intelligent themselves. The below videos show a doctor's visit. We suggest you view each one and ask yourself; as between each one what is the difference in terms of the relationship between the doctor and the patient?
+
             </TextSection>
         </Section>
     )

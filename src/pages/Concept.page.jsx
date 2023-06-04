@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { TierButton } from "./Concept.library/tierButton.component"
 import { tierReferences } from "../manifest"
 import gsap from "gsap"
+import { Icon } from "@iconify/react"
 
 /** Concept page
  * @returns the concept section breaking down each tier
  */
 const Concept = () => {
     const params = useParams()
+    const navigate = useNavigate()
     const [tab,setTab] = useState(params.tier||"tier1")
     useEffect(() => {
         setTab(params.tier||"tier1")
@@ -34,7 +36,11 @@ const Concept = () => {
     const CurrentSVG = tierReferences[tab].svg
 
     return (
-        <div className="flex overflow-clip">
+        <div className="flex overflow-clip relative">
+            <div className="absolute top-2 left-1/4 text-white flex cursor-pointer" onClick={()=>navigate('/about-concept')}>
+                <Icon icon="bx:left-arrow" className="my-auto block"/>
+                <p className="my-auto hover:underline"> Explore the concept</p>
+            </div>
             <div className="w-2/5 max-h-full absolute opacity-50 md:hidden" id="concept-svg">
                 <CurrentSVG />
             </div>
@@ -57,6 +63,7 @@ const Concept = () => {
                             <b>Extrapersonal</b>
                         </TierButton>
                     </div>
+                    <br/>
                     <CurrentTier />
                 </div>
             </div>

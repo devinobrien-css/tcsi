@@ -1,6 +1,6 @@
 import gsap from "gsap"
 import { useEffect } from "react"
-import { OutlinedHeader, SectionHeader, TextSection } from "../../components/custom.library"
+import { ExpandableTextSection, OutlinedHeader, SectionHeader, TextSection } from "../../components/custom.library"
 
 
 
@@ -37,19 +37,19 @@ export const TierOne = () => {
             </TextSection>
             <br/>
             <OutlinedHeader>gut</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 By 'Gut' of course we mean 'Instinct'. Each of us has innate and primal motivators that are designed to cause us to interpret and then react according to 'programmed' responses. For example, we feel hungry, or we feel tired. In either case we react by taking action. We eat, or we go to bed. There is a huge variety of instincts, all designed to help each of us to succeed, but here too we have a motivator that his designed to help the species succeed. This is very important as it establishes a key distinguisher between Symathetic Intelligence, and other 'intelligences'. SI is not just about 'you' - it is also about 'Us'!!
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <OutlinedHeader>mind</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 By 'Mind' we mean 'Cognition' or 'Reason'. Each of us has the capacity to contemplate any portion of our existence from a completely rational basis. We can 'Calculate' from a cold determination of the facts in front of us and make predicitions or projections. Again, this is a capacity we have that will help us survive. But, now we also have the capacity for conflict - in other words how do our projections fit with our innate motivators? We are hungry, but does our reason determine that there is a risk involved in making the effort to address our hunger in the circumstances? Further still - is the risk worth taking?
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <OutlinedHeader>heart</OutlinedHeader>
-            <TextSection>
+            <ExpandableTextSection>
                 Pascal famously said - 'The heart has reason of which the mind does not know'. Here we are concerned with our individual emotions, a different set of feelings that have to do with our 'state' of being, or perhaps better stated - our sense of our state of being. Here are some of the primary emotions;- Sadness, Hapiness, Fear, Anger, Disgust, Surprise and Regret. Over the years academics have created an ever and increasingly larger set of 'emotions', each being ever more nuanced and addressing ever more sophisticated forms of feelings.   
-            </TextSection>
+            </ExpandableTextSection>
             <br/>
             <br/>
         </div>
