@@ -11,7 +11,7 @@ const Blank = ({className}) => {
 const tierData = {
     tier0:{
         svg:Blank,
-        title:'Hover over the graphic to find out more about the tiers. Then click on any tier to learn more about that tier!',
+        title:<div className="md:absolute top-[10em] right-20 w-1/2 my-auto">Hover over the graphic to find out more about the tiers. Then click on any tier to learn more about that tier!</div>,
         content:<> </>
     },
     tier1:{
