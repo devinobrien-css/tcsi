@@ -587,16 +587,20 @@ video {
   top: 90%;
 }
 
-.top-6 {
-  top: 1.5rem;
-}
-
 .top-2 {
   top: 0.5rem;
 }
 
-.top-full {
-  top: 100%;
+.left-1\/4 {
+  left: 25%;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-16 {
@@ -617,26 +621,6 @@ video {
 
 .top-\[105\%\] {
   top: 105%;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.left-6 {
-  left: 1.5rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.left-1\/4 {
-  left: 25%;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .z-50 {
@@ -769,6 +753,14 @@ video {
   height: 100%;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -790,18 +782,6 @@ video {
 
 .h-\[0\%\] {
   height: 0%;
-}
-
-.h-0 {
-  height: 0px;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .max-h-full {
@@ -953,12 +933,6 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-90 {
-  --tw-rotate: 90deg;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-0 {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -1015,10 +989,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -1172,6 +1142,10 @@ video {
   --tw-bg-opacity: 0.3;
 }
 
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -1190,10 +1164,6 @@ video {
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
 }
 
 .bg-opacity-50 {
@@ -1392,560 +1362,8 @@ video {
   fill: #88492E;
 }
 
-.fill-\[\#6C6D61\] {
-  fill: #6C6D61;
-}
-
-.fill-\[\#EFD06F\] {
-  fill: #EFD06F;
-}
-
-.fill-\[\#CDCEDB\] {
-  fill: #CDCEDB;
-}
-
-.fill-\[\#E2BA6D\] {
-  fill: #E2BA6D;
-}
-
-.fill-\[\#C8AD9A\] {
-  fill: #C8AD9A;
-}
-
-.fill-\[\#E0A492\] {
-  fill: #E0A492;
-}
-
-.fill-\[\#625221\] {
-  fill: #625221;
-}
-
-.fill-\[\#907D62\] {
-  fill: #907D62;
-}
-
-.fill-\[\#E2BA6E\] {
-  fill: #E2BA6E;
-}
-
-.fill-\[\#595940\] {
-  fill: #595940;
-}
-
-.fill-\[\#DFA492\] {
-  fill: #DFA492;
-}
-
-.fill-\[\#D2934B\] {
-  fill: #D2934B;
-}
-
-.fill-\[\#F1EDE9\] {
-  fill: #F1EDE9;
-}
-
-.fill-\[\#645322\] {
-  fill: #645322;
-}
-
-.fill-\[\#E2B96D\] {
-  fill: #E2B96D;
-}
-
-.fill-\[\#F6F4F2\] {
-  fill: #F6F4F2;
-}
-
-.fill-\[\#D89F7A\] {
-  fill: #D89F7A;
-}
-
-.fill-\[\#91B3DC\] {
-  fill: #91B3DC;
-}
-
-.fill-\[\#908D9C\] {
-  fill: #908D9C;
-}
-
-.fill-\[\#E21D4F\] {
-  fill: #E21D4F;
-}
-
-.fill-\[\#F8F8FB\] {
-  fill: #F8F8FB;
-}
-
-.fill-\[\#851819\] {
-  fill: #851819;
-}
-
-.fill-\[\#BD8B6D\] {
-  fill: #BD8B6D;
-}
-
-.fill-\[\#CDCDCC\] {
-  fill: #CDCDCC;
-}
-
-.fill-\[\#94613A\] {
-  fill: #94613A;
-}
-
-.fill-\[\#474644\] {
-  fill: #474644;
-}
-
-.fill-\[\#D89F79\] {
-  fill: #D89F79;
-}
-
-.fill-\[\#473C32\] {
-  fill: #473C32;
-}
-
-.fill-\[\#734C3B\] {
-  fill: #734C3B;
-}
-
-.fill-\[\#BE8B6D\] {
-  fill: #BE8B6D;
-}
-
-.fill-\[\#D8A07A\] {
-  fill: #D8A07A;
-}
-
-.fill-\[\#94623A\] {
-  fill: #94623A;
-}
-
-.fill-\[\#DC415D\] {
-  fill: #DC415D;
-}
-
-.fill-\[\#D9A07A\] {
-  fill: #D9A07A;
-}
-
-.fill-\[\#D8EEF5\] {
-  fill: #D8EEF5;
-}
-
-.fill-\[\#274A64\] {
-  fill: #274A64;
-}
-
-.fill-\[\#A84B80\] {
-  fill: #A84B80;
-}
-
-.fill-\[\#152019\] {
-  fill: #152019;
-}
-
-.fill-\[\#AC7D5B\] {
-  fill: #AC7D5B;
-}
-
-.fill-\[\#BC8A6C\] {
-  fill: #BC8A6C;
-}
-
-.fill-\[\#E65D67\] {
-  fill: #E65D67;
-}
-
-.fill-\[\#FFFFFF\] {
-  fill: #FFFFFF;
-}
-
-.fill-\[\#F7F2EE\] {
-  fill: #F7F2EE;
-}
-
-.fill-\[\#EEE0D5\] {
-  fill: #EEE0D5;
-}
-
-.fill-\[\#322A20\] {
-  fill: #322A20;
-}
-
-.fill-\[\#F8B7B3\] {
-  fill: #F8B7B3;
-}
-
-.fill-\[\#D5C5BF\] {
-  fill: #D5C5BF;
-}
-
-.fill-\[\#D6A165\] {
-  fill: #D6A165;
-}
-
-.fill-\[\#F4AD74\] {
-  fill: #F4AD74;
-}
-
-.fill-\[\#E79F70\] {
-  fill: #E79F70;
-}
-
-.fill-\[\#794329\] {
-  fill: #794329;
-}
-
-.fill-\[\#3F4277\] {
-  fill: #3F4277;
-}
-
-.fill-\[\#F3E2EE\] {
-  fill: #F3E2EE;
-}
-
-.fill-\[\#E69F70\] {
-  fill: #E69F70;
-}
-
-.fill-\[\#A78D90\] {
-  fill: #A78D90;
-}
-
-.fill-\[\#332B20\] {
-  fill: #332B20;
-}
-
-.fill-\[\#E69E70\] {
-  fill: #E69E70;
-}
-
-.fill-\[\#FFF9F4\] {
-  fill: #FFF9F4;
-}
-
-.fill-\[\#F2E4DA\] {
-  fill: #F2E4DA;
-}
-
-.fill-\[\#F3AC74\] {
-  fill: #F3AC74;
-}
-
-.fill-\[\#EAD8CD\] {
-  fill: #EAD8CD;
-}
-
-.fill-\[\#473930\] {
-  fill: #473930;
-}
-
-.fill-\[\#7E7581\] {
-  fill: #7E7581;
-}
-
-.fill-\[\#403C42\] {
-  fill: #403C42;
-}
-
-.fill-\[\#5C7695\] {
-  fill: #5C7695;
-}
-
-.fill-\[\#F4F3F3\] {
-  fill: #F4F3F3;
-}
-
-.fill-\[\#DCD9D8\] {
-  fill: #DCD9D8;
-}
-
-.fill-\[\#F3AD74\] {
-  fill: #F3AD74;
-}
-
-.fill-\[\#F8B8B4\] {
-  fill: #F8B8B4;
-}
-
-.fill-\[\#D2C7B3\] {
-  fill: #D2C7B3;
-}
-
-.fill-\[\#FFFBFB\] {
-  fill: #FFFBFB;
-}
-
-.fill-\[\#A79F9E\] {
-  fill: #A79F9E;
-}
-
-.fill-\[\#F2E1EC\] {
-  fill: #F2E1EC;
-}
-
-.fill-\[\#EBD8CE\] {
-  fill: #EBD8CE;
-}
-
-.fill-\[\#342B21\] {
-  fill: #342B21;
-}
-
-.fill-\[\#493A31\] {
-  fill: #493A31;
-}
-
-.fill-\[\#3A3128\] {
-  fill: #3A3128;
-}
-
-.fill-\[\#4A3A32\] {
-  fill: #4A3A32;
-}
-
-.fill-\[\#FAF9F8\] {
-  fill: #FAF9F8;
-}
-
-.fill-\[\#41362C\] {
-  fill: #41362C;
-}
-
-.fill-\[\#F4EEEA\] {
-  fill: #F4EEEA;
-}
-
-.fill-\[\#554D76\] {
-  fill: #554D76;
-}
-
-.fill-\[\#7E7682\] {
-  fill: #7E7682;
-}
-
-.fill-\[\#413D43\] {
-  fill: #413D43;
-}
-
-.fill-\[\#352D23\] {
-  fill: #352D23;
-}
-
-.fill-\[\#F6F6F6\] {
-  fill: #F6F6F6;
-}
-
-.fill-\[\#F7F6F7\] {
-  fill: #F7F6F7;
-}
-
-.fill-\[\#F9F8F9\] {
-  fill: #F9F8F9;
-}
-
-.fill-\[\#EBEAEB\] {
-  fill: #EBEAEB;
-}
-
-.fill-\[\#F3F2F1\] {
-  fill: #F3F2F1;
-}
-
-.fill-\[\#F3F2F2\] {
-  fill: #F3F2F2;
-}
-
-.fill-\[\#E9E8E9\] {
-  fill: #E9E8E9;
-}
-
-.fill-\[\#E5E2E3\] {
-  fill: #E5E2E3;
-}
-
-.fill-\[\#CBC8CA\] {
-  fill: #CBC8CA;
-}
-
-.fill-\[\#E8E6E6\] {
-  fill: #E8E6E6;
-}
-
-.fill-\[\#B4AFB1\] {
-  fill: #B4AFB1;
-}
-
-.fill-\[\#EDECEC\] {
-  fill: #EDECEC;
-}
-
-.fill-\[\#D2CFD0\] {
-  fill: #D2CFD0;
-}
-
-.fill-\[\#372F25\] {
-  fill: #372F25;
-}
-
-.fill-\[\#5D4534\] {
-  fill: #5D4534;
-}
-
-.fill-\[\#958376\] {
-  fill: #958376;
-}
-
-.fill-\[\#2B2F3D\] {
-  fill: #2B2F3D;
-}
-
-.fill-\[\#B8B2A8\] {
-  fill: #B8B2A8;
-}
-
-.fill-\[\#B9B3A9\] {
-  fill: #B9B3A9;
-}
-
-.fill-\[\#463223\] {
-  fill: #463223;
-}
-
-.fill-\[\#DCAC86\] {
-  fill: #DCAC86;
-}
-
-.fill-\[\#DCAD87\] {
-  fill: #DCAD87;
-}
-
-.fill-\[\#251A1B\] {
-  fill: #251A1B;
-}
-
-.fill-\[\#B5AE9C\] {
-  fill: #B5AE9C;
-}
-
-.fill-\[\#2D313E\] {
-  fill: #2D313E;
-}
-
-.fill-\[\#EEECEC\] {
-  fill: #EEECEC;
-}
-
-.fill-\[\#2C3551\] {
-  fill: #2C3551;
-}
-
-.fill-\[\#24293B\] {
-  fill: #24293B;
-}
-
-.fill-\[\#342621\] {
-  fill: #342621;
-}
-
-.fill-\[\#E1EAF2\] {
-  fill: #E1EAF2;
-}
-
-.fill-\[\#A1642C\] {
-  fill: #A1642C;
-}
-
-.fill-\[\#CAA190\] {
-  fill: #CAA190;
-}
-
-.fill-\[\#45352D\] {
-  fill: #45352D;
-}
-
-.fill-\[\#BE9A80\] {
-  fill: #BE9A80;
-}
-
-.fill-\[\#442F27\] {
-  fill: #442F27;
-}
-
-.fill-\[\#292C30\] {
-  fill: #292C30;
-}
-
-.fill-\[\#E9E7E5\] {
-  fill: #E9E7E5;
-}
-
-.fill-\[\#C0B7A7\] {
-  fill: #C0B7A7;
-}
-
-.fill-\[\#7D6D58\] {
-  fill: #7D6D58;
-}
-
-.fill-\[\#5C5851\] {
-  fill: #5C5851;
-}
-
-.fill-\[\#8C7B7B\] {
-  fill: #8C7B7B;
-}
-
-.fill-\[\#3B4860\] {
-  fill: #3B4860;
-}
-
-.fill-\[\#727272\] {
-  fill: #727272;
-}
-
-.fill-\[\#8B7B7A\] {
-  fill: #8B7B7A;
-}
-
-.fill-\[\#474747\] {
-  fill: #474747;
-}
-
 .fill-\[\#C6C6C6\] {
   fill: #C6C6C6;
-}
-
-.fill-\[\#91CBDE\] {
-  fill: #91CBDE;
-}
-
-.fill-\[\#DFA392\] {
-  fill: #DFA392;
-}
-
-.fill-\[\#1C1B1B\] {
-  fill: #1C1B1B;
-}
-
-.fill-\[\#C6C5C5\] {
-  fill: #C6C5C5;
-}
-
-.fill-\[\#D6D1D3\] {
-  fill: #D6D1D3;
-}
-
-.fill-\[\#FCFAF9\] {
-  fill: #FCFAF9;
-}
-
-.fill-\[\#57443E\] {
-  fill: #57443E;
-}
-
-.fill-\[\#FCF6F3\] {
-  fill: #FCF6F3;
 }
 
 .fill-\[\#313534\] {
@@ -1994,6 +1412,10 @@ video {
 
 .fill-\[\#3B383D\] {
   fill: #3B383D;
+}
+
+.fill-\[\#474747\] {
+  fill: #474747;
 }
 
 .fill-\[\#636363\] {
@@ -2136,6 +1558,10 @@ video {
   fill: #B66E38;
 }
 
+.fill-\[\#FFFFFF\] {
+  fill: #FFFFFF;
+}
+
 .fill-\[\#261D13\] {
   fill: #261D13;
 }
@@ -2182,6 +1608,10 @@ video {
 
 .fill-\[\#E1DBD0\] {
   fill: #E1DBD0;
+}
+
+.fill-\[\#E2BA6E\] {
+  fill: #E2BA6E;
 }
 
 .fill-\[\#A76535\] {
@@ -2336,16 +1766,12 @@ video {
   padding-left: 2rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pr-6 {
   padding-right: 1.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -2428,6 +1854,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-tcsi-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(254 226 1 / var(--tw-text-opacity));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -2468,11 +1899,6 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-tcsi-yellow {
-  --tw-text-opacity: 1;
-  color: rgb(254 226 1 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -2503,10 +1929,6 @@ video {
 
 .opacity-40 {
   opacity: 0.4;
-}
-
-.opacity-90 {
-  opacity: 0.9;
 }
 
 .opacity-75 {
@@ -2757,16 +2179,12 @@ video {
     padding-right: 1rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
+  .md\:pt-28 {
+    padding-top: 7rem;
   }
 
   .md\:pl-6 {
     padding-left: 1.5rem;
-  }
-
-  .md\:pt-28 {
-    padding-top: 7rem;
   }
 
   .md\:text-left {

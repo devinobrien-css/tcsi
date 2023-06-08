@@ -27,7 +27,7 @@ const Nav = ({ type }) => {
                 <div className="bg-black flex justify-center p-2">
                     <p 
                         className={` underline font-light cursor-pointer flex ${type==='concept'?'text-white':'text-gray-400'}`}
-                        onClick={() => type==='concept'?navigate('/about'):null}
+                        onClick={() => type==='concept'?navigate('/center-home'):null}
                     >       
                         <Icon icon="bx:left-arrow" className="my-auto block"/> 
                         <span className="my-auto">Visit the Center for SI</span>

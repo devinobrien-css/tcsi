@@ -69,8 +69,6 @@ const tierData = {
     }
 }
 
-
-
 const AboutConcept = () => {
     const [tier,setTier] = useState(0)
     const [hover,setHover] = useState()
@@ -133,11 +131,3 @@ const AboutConcept = () => {
     )
 }
 export default AboutConcept
-
-
-/* <RedButton 
-className="translate-x-10 -translate-y-20"
-onClick={() => {
-    navigate(`/concept/tier${getTier()}`)
-}}
->Learn More</RedButton> */
