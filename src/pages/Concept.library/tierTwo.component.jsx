@@ -17,7 +17,8 @@ export const TierTwo = () => {
 
     return (
         <div id="tier-section">
-            <SectionHeader>Tier 2 - Interpersonal/Between</SectionHeader>
+            <SectionHeader>Tier 2 - Interpersonal / Between / Social</SectionHeader>
+            <br/>
             <TextSection>
                 Sympathetic Intelligence at this level is driven by a 
                 survivalist Need, Desire and Capacity to belong or be connected

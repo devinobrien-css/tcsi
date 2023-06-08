@@ -17,7 +17,8 @@ export const TierThree = () => {
 
     return (
         <div id="tier-section">
-            <SectionHeader>Tier 3 - Extrapersonal/Amongst</SectionHeader>
+            <SectionHeader>Tier 3 - Extrapersonal / Amongst / Community</SectionHeader>
+            <br/>
             <TextSection>
                 Sympathetic Intelligence at this level is visible in the day to day
                 activities of societies through their cultures, conformity and 

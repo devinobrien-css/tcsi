@@ -51,16 +51,13 @@ const Concept = () => {
                 <div className="mt-8 p-4 md:p-0">
                     <div className="border-b-2 border-gray-300">
                         <TierButton tab={tab} tier="tier1">
-                            Tier 1 <br/> 
-                            <b>Intrapersonal</b>
+                            Tier 1 
                         </TierButton>
                         <TierButton tab={tab} tier="tier2">
-                            Tier 2 <br/> 
-                            <b>Interpersonal</b>
+                            Tier 2
                         </TierButton>
                         <TierButton tab={tab} tier="tier3">
-                            Tier 3 <br/> 
-                            <b>Extrapersonal</b>
+                            Tier 3
                         </TierButton>
                     </div>
                     <br/>

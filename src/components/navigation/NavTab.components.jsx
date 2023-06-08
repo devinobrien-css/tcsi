@@ -8,7 +8,7 @@ export const NavTab = ({className,path,title,...rest}) => {
 
     return (
         <Link className="h-full group" to={path} >
-            <div {...rest} className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:border-red-500 font-extralight transform transition-all border-b-4 ${className} ${path===location.pathname?" border-tcsi-yellow":"border-transparent"}`}>
+            <div {...rest} className={`capitalize my-auto [&>*]:my-auto p-4 group-hover:border-red-500 font-extralight transform transition-all border-b-4 whitespace-nowrap ${className} ${path===location.pathname?" border-tcsi-yellow":"border-transparent"}`}>
                 <span>{title}</span>
             </div>
         </Link>
