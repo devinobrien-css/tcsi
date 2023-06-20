@@ -12,7 +12,7 @@ const Home = () => {
                 
                 <WhiteCirclesSVG  className="absolute top-2 translate-x-[75%] z-0 md:block hidden"/>
 
-                <div className="md:w-8/12  my-auto">
+                <div className="md:w-9/12  my-auto">
                     <div className="mx-auto w-fit p-2 md:pr-8 z-[500] md:block hidden">
                         <p className="ml-4 text-xl font-light"><span className="text-4xl font-light">visit</span> the</p>
                         <p className="text-xl font-light">Center for <span className="text-4xl font-light">Sympathetic Intelligence</span></p>
