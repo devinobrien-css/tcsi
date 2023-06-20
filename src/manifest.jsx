@@ -151,12 +151,12 @@ export const router = createBrowserRouter([
         errorElement:<Error />,
     },
     {
-        path: "Depthfullness",
+        path: "depthfullness",
         element:<RenderPage type="concept"><Depthfullness/></RenderPage>,
         errorElement:<Error />,
     },
     {
-        path: "Examples",
+        path: "examples",
         element:<RenderPage type="concept"><Examples/></RenderPage>,
         errorElement:<Error />,
     },

@@ -61,8 +61,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="md:w-1/2 mx-auto flex flex-col">
-                <div className="top-[7em] left-[33em] md:w-[70%] absolute opacity-60">
-                    <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
+                <div className="top-[7em] left-[33em] md:w-[35%] absolute opacity-60">
+                    <CircleSVG className="rounded-full float-left md:block hidden" style={{shapeOutside:'circle()'}}/>
                 </div>
 
                 <div className="my-auto flex justify-end">
@@ -77,14 +77,6 @@ const Home = () => {
                         </div>
 
                         <div className="bg-white bg-opacity-40 py-10 px-6 md:my-6">
-                            <Icon 
-                                icon="gg:play-button" 
-                                className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-blue" 
-                                width="70"
-                                onClick={()=>{
-                                    navigate('/center-home')
-                                }}
-                            />
                             <p className="text-lg">
                                 Sympathetic Intelligence is an innate regulatory
                                 sense and response mechanism which each of us has
@@ -99,7 +91,7 @@ const Home = () => {
 
                         <Icon 
                             icon="gg:play-button" 
-                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
+                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden z-[1000]" 
                             width="90"
                             onClick={()=>{
                                 navigate('/about-concept')

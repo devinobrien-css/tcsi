@@ -9,9 +9,8 @@ export const ConceptNav = ({Burger}) => {
                 <NavTab path="/concept/tier1" title="the tiers"/>
                 <NavTab path="/origins" title="origins" />
                 <div className="border border-gray-800 border-opacity-20 my-auto h-4/5"></div>
-                <NavTab path="/dephtfullness" title="Depthfullness" />
+                <NavTab path="/depthfullness" title="Depthfullness" />
                 <NavTab path="/socio-neurological" title="Socio-Neurology" />
-                <NavTab path="/applications" title="applications" />
                 <NavTab path="/applications" title="applications" />
                 <NavTab path="/videos" title="videos" />
                 <NavTab path="/components" title="Components" />
