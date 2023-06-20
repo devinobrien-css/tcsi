@@ -30,7 +30,7 @@ const Home = () => {
                             className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-green" 
                             width="70"
                             onClick={()=>{
-                                navigate('/about')
+                                navigate('/center-home')
                             }}
                         />
                         <p className="text-lg">
@@ -60,12 +60,13 @@ const Home = () => {
                     />
                 </div>
             </div>
-            <div className="md:w-1/2 mx-auto relative ">
-                <div className="md:-translate-x-[25%] md:translate-y-[25%] md:w-[130%]">
-
-
+                <div className="top-0 left-full md:w-[130%] absolute z-[1000]">
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
-                    <div className="w-full md:pt-28 p-4 md:text-black text-white font-light">
+                </div>
+            <div className="md:w-1/2 mx-auto relative ">
+
+                <div className="border my-auto">
+                    <div className="w-full my-auto p-4 md:text-black font-light">
                         <div className="md:block hidden">
                             <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
                             <p className="text-4xl">Sympathetic Intelligence</p>
@@ -74,17 +75,6 @@ const Home = () => {
                         <div className="block md:hidden">
                             <p className="text-3xl">Explore the concept of Sympathetic Intelligence</p>
                         </div>
-
-                        <br/>
-
-                        {/* <div className="mt-12 font-light font-roboto text-lg md:flex hidden">
-                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/origins')}>Origins</p>
-                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/concept')}>The Tiers</p>
-                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/applications')}>Applications</p>
-                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/videos')}>Videos</p>
-                            <p className="float-left mx-auto w-1/3 text-lg cursor-pointer hover:underline" onClick={()=>navigate('/experiments')}>Experiments</p>
-                        </div> */}
-
                         <Icon 
                             icon="gg:play-button" 
                             className="text-white rounded-full bg-white bg-opacity-10 border mx-auto my-4 cursor-pointer hover:scale-105 transition-all block md:hidden" 
@@ -92,27 +82,30 @@ const Home = () => {
                             onClick={()=>{
                                 navigate('/about-concept')
                             }}
-                        />
+                        />  
 
-                        <p className="text-lg md:pl-6 text-justify md:text-left">
-                            Sympathetic Intelligence is an innate regulatory
-                            sense and response mechanism which each of us has
-                            and which binds us all together as a species.
-                            It is present at that point of inflection which is 
-                            at the center of every human transaction, the 
-                            measure of which is seen in the degree of care 
-                            exhibited by our behavior and the result of which
-                            can be a better society for all.
-                        </p>
-                        <br/>
-                        <Icon 
-                            icon="gg:play-button" 
-                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
-                            width="90"
-                            onClick={()=>{
-                                navigate('/about-concept')
-                            }}
-                        />
+                        <div className="bg-white bg-opacity-20">
+                            <p className="text-lg">
+                                Sympathetic Intelligence is an innate regulatory
+                                sense and response mechanism which each of us has
+                                and which binds us all together as a species.
+                                It is present at that point of inflection which is 
+                                at the center of every human transaction, the 
+                                measure of which is seen in the degree of care 
+                                exhibited by our behavior and the result of which
+                                can be a better society for all.
+                            </p>
+                            <br/>
+                            <Icon 
+                                icon="gg:play-button" 
+                                className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
+                                width="90"
+                                onClick={()=>{
+                                    navigate('/about-concept')
+                                }}
+                            />
+                        </div>
+
                     </div>
                 </div>
             </div>
