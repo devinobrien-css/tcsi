@@ -12,10 +12,10 @@ const Home = () => {
                 
                 <WhiteCirclesSVG  className="absolute top-2 translate-x-[75%] z-0 md:block hidden"/>
 
-                <div className="w-full mx-auto my-auto">
+                <div className="md:w-8/12  my-auto">
                     <div className="mx-auto w-fit p-2 md:pr-8 z-[500] md:block hidden">
-                        <p className="ml-4 text-xl"><span className="text-4xl">visit</span> the</p>
-                        <p className="text-xl">Center for <span className="text-4xl">Sympathetic Intelligence</span></p>
+                        <p className="ml-4 text-xl font-light"><span className="text-4xl font-light">visit</span> the</p>
+                        <p className="text-xl font-light">Center for <span className="text-4xl font-light">Sympathetic Intelligence</span></p>
                     </div>
 
 
@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className="bg-white bg-opacity-20 md:w-10/12 py-10 md:pl-20 md:pr-4 px-4 md:my-6 ">
+                    <div className="bg-white bg-opacity-40 py-12 md:pl-20 md:pr-4 px-4 md:my-6 ">
                         <Icon 
                             icon="gg:play-button" 
                             className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-green" 
@@ -60,31 +60,31 @@ const Home = () => {
                     />
                 </div>
             </div>
-                <div className="top-0 left-full md:w-[130%] absolute z-[1000]">
+            <div className="md:w-1/2 mx-auto flex flex-col">
+                <div className="top-[7em] left-[33em] md:w-[70%] absolute opacity-60">
                     <CircleSVG className="rounded-full float-left w-3/6 md:block hidden" style={{shapeOutside:'circle()'}}/>
                 </div>
-            <div className="md:w-1/2 mx-auto relative ">
 
-                <div className="border my-auto">
-                    <div className="w-full my-auto p-4 md:text-black font-light">
-                        <div className="md:block hidden">
-                            <p className="text-xl"><span className="text-4xl">explore</span> the concept of</p>
-                            <p className="text-4xl">Sympathetic Intelligence</p>
+                <div className="my-auto flex justify-end">
+                    <div className="md:w-9/12 my-auto  md:text-black font-light">
+                        <div className="md:block hidden w-fit ml-24">
+                            <p className="text-xl font-light"><span className="text-4xl font-light">explore</span> the concept of</p>
+                            <p className="pl-8 text-4xl font-light">Sympathetic Intelligence</p>
                         </div>
 
-                        <div className="block md:hidden">
-                            <p className="text-3xl">Explore the concept of Sympathetic Intelligence</p>
+                        <div className="block md:hidden my-10">
+                            <p className="text-3xl text-center">Explore the concept of Sympathetic Intelligence</p>
                         </div>
-                        <Icon 
-                            icon="gg:play-button" 
-                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto my-4 cursor-pointer hover:scale-105 transition-all block md:hidden" 
-                            width="70"
-                            onClick={()=>{
-                                navigate('/about-concept')
-                            }}
-                        />  
 
-                        <div className="bg-white bg-opacity-20">
+                        <div className="bg-white bg-opacity-40 py-10 px-6 md:my-6">
+                            <Icon 
+                                icon="gg:play-button" 
+                                className="text-white rounded-full bg-opacity-80 border mx-auto cursor-pointer hover:scale-105 transition-all block md:hidden -mt-16 -translate-y-2 z-[500] bg-tcsi-blue" 
+                                width="70"
+                                onClick={()=>{
+                                    navigate('/center-home')
+                                }}
+                            />
                             <p className="text-lg">
                                 Sympathetic Intelligence is an innate regulatory
                                 sense and response mechanism which each of us has
@@ -95,17 +95,16 @@ const Home = () => {
                                 exhibited by our behavior and the result of which
                                 can be a better society for all.
                             </p>
-                            <br/>
-                            <Icon 
-                                icon="gg:play-button" 
-                                className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
-                                width="90"
-                                onClick={()=>{
-                                    navigate('/about-concept')
-                                }}
-                            />
                         </div>
 
+                        <Icon 
+                            icon="gg:play-button" 
+                            className="text-white rounded-full bg-white bg-opacity-10 border mx-auto cursor-pointer hover:scale-105 transition-all md:block hidden" 
+                            width="90"
+                            onClick={()=>{
+                                navigate('/about-concept')
+                            }}
+                        />
                     </div>
                 </div>
             </div>
